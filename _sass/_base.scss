@@ -111,8 +111,11 @@ a:focus {
 }
 
 .post-body img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
       
 .post-body iframe, .post-body object {
