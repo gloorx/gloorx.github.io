@@ -4,7 +4,7 @@
 .site-header {
     overflow: hidden;
     text-align: center;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 10px 0px;
     border-bottom: 5px solid $brand-color;
 
 }
@@ -27,9 +27,9 @@
 }
 
 .site-nav {
-    margin-top: 0.5em;
+    margin-top: 0em;
     text-align: center;
-    line-height: 3em;
+    line-height: 2em;
     font-size: $menu-font-size;
 }
 .site-nav a {
