@@ -1,23 +1,44 @@
 ---
 layout: default
 ---
+{% for page in paginator.posts %}
+<div class="post">
+  <!-- 포스트 제목 -->
+  <header class="post-header">
+    <h1 class="post-title">
+      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    </h1>
+  </header>
 
-<div class="home">
+  <!-- 포스트 본문 -->
+  <article class="post-body">
+    <div class="post-content">
+      {{ page.content }}
+    </div>
+  </article>
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- 포스트 정보 -->
+  <footer class="post-footer">
+    <div class="post-date">
+      {{ page.date | date: "%Y년 %m월 %-d일" }}
+    </div>
+  </footer>
+</div>
+{% endfor %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="previous">« Older</a>
+  {% else %}
+    <span class="previous">« Older</span>
+  {% endif %}
+  <!--
+  <span class="page_num">{{ paginator.page }}/{{ paginator.total_pages }}</span>
+  -->
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="next">Newer »</a>
+  {% else %}
+    <span class="next">Newer »</span>
+  {% endif %}
 </div>

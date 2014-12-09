@@ -2,88 +2,184 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 5px solid $brand-color;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
 }
-
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    font-family: 'Tahoma';
+    font-size: 60px;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+    line-height: 1.25;
+    font-weight: bold;
+}
+.site-title a {
+    color: #222222;
+    text-decoration: none;
+}
+.description {
+    font-size: $base-font-size;
+    margin: 0;
+    color: $gray-color;
+    font-style: italic;
 }
 
 .site-nav {
+    margin-top: 0.5em;
+    text-align: center;
+    line-height: 3em;
+    font-size: $menu-font-size;
+}
+.site-nav a {
+    color: $text-color;
+    display: block;
+    padding: 0 1em;
+    border-radius: 0.25em;
+    text-decoration: none;
+}
+.site-nav a:hover {
+    color: $brand-color;
+    background: $menu-hover-color;
+    text-decoration: none;
+}
+.site-nav ul {
+    margin: 0; padding: 0; 
+    list-style-type: none; 
+    list-style-image: none; 
+
     float: right;
-    line-height: 56px;
+    position: relative;
+    left: -50%;
+}
+.site-nav li {
+    float: left;
+    position: relative;
+    left: 50%;
+}
 
-    .menu-icon {
-        display: none;
-    }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
+/**
+ * Search Form
+ */
+form input[type="text"] {
+    border: 0 none;
+    font-size: $menu-font-size;
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    width: 62px;
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+    padding: 0.9em 1em;
+    border-radius: 0.25em;
+    text-decoration: none;
+    cursor: pointer;
+}
+form input[type="text"]:hover {
+    background: $menu-hover-color;
+    text-decoration: none;
+}
+form input[type="text"]:focus {
+    background: $menu-hover-color;
+    text-decoration: none;
+    cursor: auto;
+}
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+input:hover::-webkit-input-placeholder {
+    color: $brand-color;
+}
+input:focus::-webkit-input-placeholder {
+    color: #999;
+}
 
-            > svg {
-                width: 18px;
-                height: 15px;
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    opacity: 1;
+}
+input:hover:-moz-placeholder {
+    color: $brand-color;
+    opacity: 1;
+}
+input:focus:-moz-placeholder {
+    color: $gray-color;
+    opacity: 1;
+}
 
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    opacity: 1;
+}
+input:hover::-moz-placeholder {
+    color: $brand-color;
+    opacity: 1;
+}
+input:focus::-moz-placeholder {
+    color: $gray-color;
+    opacity: 1;
+}
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+input:hover:-ms-input-placeholder {
+    color: $brand-color;
+}
+input:focus:-ms-input-placeholder {
+    color: $gray-color;
+}
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+input {
+    outline-style: none;
+}
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+
+
+/**
+ * Pagination
+ */
+.pagination {
+    max-width: $on-laptop;
+    margin: 0 auto;
+
+    margin-top: 2em;
+    text-align: center;
+    line-height: 3em;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+/*--- 페이지 버튼 ---*/
+.pagination .previous,
+.pagination .next {
+    display: block;
+    height: 3em;
+    padding: 0 1em;
+    border-radius: 0.25em;
+}
+.pagination a, .pagination .a {
+    text-decoration: none;
+}
+.pagination a:hover {
+    background: $menu-hover-color;
+}
+.pagination .previous {
+    float: left;
+}
+.pagination .next {
+    float: right;
 }
 
 
@@ -92,145 +188,68 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    margin-top: 2em;
+    padding: 1em 0em 1em 0em;
+    border-top: 5px solid $brand-color;
 }
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
+.copyright {
     font-size: $small-font-size;
-    color: $grey-color;
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
-.post-link {
-    display: block;
-    font-size: 24px;
-}
 
 
 
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
+@media screen and (max-width: 850px) {
+
+    .site-title {
+        font-size: 50px;
+    }
+    .description {
+        font-size: 17px;
+    }
+    .site-nav {
+        font-size: 17px;
+        line-height: 2em;
+    }
+    .site-nav a {
+        padding: 0 0.5em;
+    }
+    form input[type="text"] {
+        border: 0 none;
+        font-size: 17px;
+        width: 53px;
+
+        padding: 0.4em 0.5em;
+        border-radius: 0.25em;
+        text-decoration: none;
+    }
+
+    .post-title {
+        margin: 1em 0px 1em 0px;
+    }
+    .post {
+        margin: 0px 10px 0px 10px;
+    }
+    .post-body blockquote {
+        padding-left: 10px;
+        margin: 20px;
+    }
+
+    .pagination {
+        font-size: 17px;
+    }
+    .pagination .previous {
+        float: center;
+    }
+    .pagination .next {
+        float: center;
     }
 }
 
-.post-content {
-    margin-bottom: $spacing-unit;
 
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}

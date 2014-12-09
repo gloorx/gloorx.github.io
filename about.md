@@ -3,9 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+김상원입니다.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+이 블로그는 2014년 12월 1일부터 운영하기 시작했습니다. 주로 **해외 UX 칼럼**에 대한 내용과 관심가는 **새로운 전자기기**, **프로그래밍**에 대한 내용을 포스팅합니다. UX 공부와 더불어 영어 실력 향상에 목적을 두고 있습니다. 글쓰는 능력이 부족하다보니 긴 글을 잘 쓰지 않습니다. 읽기 편한 블로그를 만드려고 부가적인 기능은 제거했고, 더 읽기 편하게 하기 위해 기능적인 부분이나 디자인은 점진적으로 개선할 예정입니다.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+블로그를 구독하고 싶으신 분은 [이것](http://pueue.com/feed.xml)을 이용하시면 됩니다.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+댓글 기능이 없습니다. 앞으로도 없을 예정이지만 글에 대해 피드백을 주고 싶으시면 제 트위터([@PueuePueue](http://twitter.com/pueuepueue))를 통해 연락주세요. 맞춤법, 오타, 번역 지적도 환영합니다.
