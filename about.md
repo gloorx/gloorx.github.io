@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+search_omit: true
 ---
 김상원입니다.
 
