@@ -2,9 +2,7 @@
 layout: page
 title: Archive
 permalink: /archive/
-search_omit: true
 ---
-
 {% for tag in site.tags %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
@@ -19,5 +17,4 @@ search_omit: true
   {% endif %}
 {% endfor %}
 </ul>
-
 {% endfor %}
