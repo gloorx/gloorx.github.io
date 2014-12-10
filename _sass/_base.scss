@@ -130,8 +130,9 @@ a:focus {
 }
       
 .post-body ul, .post-body ol, .post-body li {
-    margin-left: 1em;
-    /*font-size: 20px;*/
+    margin: 1em;
+    font-size: 95%;
+    line-height:1.6;
 }
 
 .post-body pre {
