@@ -9,7 +9,7 @@
 
 }
 .site-title {
-    font-family: 'Tahoma', 'Geneva', 'sans-serif';
+    font-family: Tahoma, Helvetica, Arial, Dotum, sans-serif;
     font-size: 60px;
 
     line-height: 1.25;
@@ -155,7 +155,7 @@ input {
     max-width: $on-laptop;
     margin: 0 auto;
 
-    margin-top: 2em;
+    margin: 0.5em 0em 0.5em 0em;
     text-align: center;
     line-height: 3em;
     overflow: hidden;
@@ -189,8 +189,7 @@ input {
  * Site footer
  */
 .site-footer {
-    margin-top: 2em;
-    padding: 1em 0em 1em 0em;
+    padding: 0.5em 0em 0.5em 0em;
     border-top: 5px solid $brand-color;
 
     font-size: $small-font-size;
@@ -214,10 +213,10 @@ input {
         font-size: 50px;
     }
     .description {
-        font-size: 16px;
+        font-size: 15px;
     }
     .site-nav {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 2em;
     }
     .site-nav a {
@@ -243,6 +242,9 @@ input {
         font-size: 16px;
         margin: 0px 10px 0px 10px;
     }
+    p {
+        margin-top: 0.5em;
+    }
     .post-body h2 {
         font-size: 25px;
         margin-top: 0.5em;
@@ -260,14 +262,22 @@ input {
         margin: 10px;
     }
 
+    .post-date {
+        font-size: 13px;
+    }
+
     .pagination {
-        font-size: 14px;
+        font-size: 17px;
     }
     .pagination .previous {
         float: center;
     }
     .pagination .next {
         float: center;
+    }
+
+    .site-footer {
+        font-size: 13px;
     }
 }
 
