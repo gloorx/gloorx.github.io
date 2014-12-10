@@ -129,10 +129,13 @@ a:focus {
     /*font-style: italic;*/
 }
       
-.post-body ul, .post-body ol, .post-body li {
-    margin: 1em;
-    font-size: 92%;
+.post-body ul {
+    margin: 1.5em;
+}
+.post-body ol, .post-body li {
+    font-size: 95%;
     line-height:1.6;
+    margin-bottom: 0.5em;
 }
 
 .post-body pre {
