@@ -1,6 +1,6 @@
 ---
 tag: Scribbles
-title: 블로그를 Wordpress에서 Jekyll로 이전했다
+title: Wordpress에서 Jekyll로
 ---
 Raspberry pi + Wordpress 조합에서 [Github-pages](https://pages.github.com) + [Jekyll](http://jekyllrb.com) 조합으로 블로그를 새로 만들었다. 옮기게 된 이유는
 

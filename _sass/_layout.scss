@@ -175,6 +175,7 @@ input {
 }
 .pagination a:hover {
     background: $menu-hover-color;
+    font-weight:bold;
 }
 .pagination .previous {
     float: left;
