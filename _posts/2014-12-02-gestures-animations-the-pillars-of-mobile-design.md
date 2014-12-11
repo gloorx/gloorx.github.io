@@ -6,7 +6,7 @@ tag: UX
 
 > **감추기:** 모바일 기기에서는 크기의 제약이 있기 때문에 UI 컨트롤 패널이 컨텐츠 공간을 희생시키면서 화면 위에 짜맞춰진다. 하지만 앱/사이트가 제스쳐 컨트롤을 활용하면 할수록 화면에서 버튼은 점점 사라지고 결국 컨텐츠를 위한 자리가 많아진다.
 > 
-> 눈에 보이는 버튼 대신 제스쳐에 의존할수록 혼란을 야기할 가능성도 점점 커진다.
+> 사실, 눈에 보이는 버튼 대신 제스쳐에 의존할수록 혼란을 야기할 가능성도 점점 커진다.
 >
 <span id="{{page.id}}" style="display:none">
 > **Less Clutter:** As if the size limitations on mobile devices weren't bad enough, the common lack of a keyboard means often the UI control panel is squeezed onto the screen, sacrificing valuable content space. But the more an app/site relies on gesture controls, the less buttons on-screen, and thus more content.<br/><br/>In fact, the more you rely on gestures over visible buttons, the greater the possibility for confusion.
