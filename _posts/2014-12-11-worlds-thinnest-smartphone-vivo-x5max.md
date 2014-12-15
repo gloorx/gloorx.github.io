@@ -1,6 +1,7 @@
 ---
 tag: Gadgets
 title: 가장 얇은 스마트폰, Vivo X5Max
+description: 중국 제조사 Vivo에서 4.75mm 두께의 스마트폰 Vivo X5Max를 공개했다. 여태껏 나온 스마트폰 중 가장 얇다.
 ---
 ![Vivo X5max](https://lh6.googleusercontent.com/-8eLEIlInKHA/VIj4aZzet5I/AAAAAAAAHPA/w3t8PwTKrR8/w640-h360-no/vivo-x5max.jpg)
 

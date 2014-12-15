@@ -1,6 +1,7 @@
 ---
 title: "제스쳐와 애니메이션: 모바일 디자인의 주춧돌"
 tag: UX
+description: 감추기: 모바일 기기에서는 크기의 제약이 있기 때문에 UI 컨트롤 패널이 컨텐츠 공간을 희생시키면서 화면 위에 짜맞춰진다. 하지만 앱/사이트가 제스쳐 컨트롤을 활용하면 할수록 화면에서 버튼은 점점 사라지고 결국 컨텐츠를 위한 자리가 많아진다.
 ---
 [UX Magazine에 올라온 기사다.](http://uxmag.com/articles/gestures-animations-the-pillars-of-mobile-design)
 

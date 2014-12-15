@@ -1,6 +1,7 @@
 ---
 tag: Scribbles
 title: 분산형 p2p는 대세가 될 수 있을까?
+description: Bittorrent에서 p2p 방식의 웹브라우저를 선보였다.
 ---
 [Bittorrent에서 p2p 방식의 웹브라우저를 선보였다.](http://blog.bittorrent.com/2014/12/10/project-maelstrom-the-internet-we-build-next/) 정확히 어떤 방식일지는 모르겠지만(아마 캐시나 임시파일을 이용할 것 같지만), **서버 없이도 웹 사이트를 운영할 수 있는 방법**이 될 것 같아서 긍정적으로 보고 있다. 다만 '잊혀질 권리'가 조금 걱정되긴 한다.
 

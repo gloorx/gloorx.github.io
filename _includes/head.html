@@ -26,6 +26,8 @@
 
     {% if page.url %}
         <meta content="{{ page.url | prepend: site.baseurl }}" property="og:url">
+    {% else %}
+        <meta content="{{ site.baseurl }}" property="og:url">
     {% endif %}
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
