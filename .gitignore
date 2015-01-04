@@ -1,2 +1,5 @@
 _site
 .sass-cache
+_drafts
+*.sublime-project
+*.sublime-workspace
