@@ -144,6 +144,7 @@ a:focus {
     padding: 5px;
     color: #dddddd;
     background: rgba(0,0,0,0.8);
+    line-height: 1.0;
 }
 
 .post-body code {
@@ -154,7 +155,6 @@ a:focus {
 }
 
 .post-body pre code{
-    line-height: 1.0;
     background: rgba(0,0,0,0);
 }
 
