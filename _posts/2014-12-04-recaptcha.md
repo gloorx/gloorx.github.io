@@ -1,6 +1,6 @@
 ---
 title: Recaptcha
-tag: Gadgets
+tag: UX
 ---
 ![recaptcha](https://lh4.googleusercontent.com/-NjTKOD-vjbA/VH_pos4NMXI/AAAAAAAAHHs/0vRZbwETjBs/w616-h164-no/hero-recaptcha-demo.gif "recaptcha")
 

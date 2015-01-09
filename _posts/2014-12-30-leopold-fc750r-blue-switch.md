@@ -1,6 +1,6 @@
 ---
 tag: Gadgets
-title: Leopold fc750r 청축 구매
+title: Leopold fc750r 청축
 ---
 ![fc750r](https://lh4.googleusercontent.com/-we__wk3LZ98/VKJrM2XSkUI/AAAAAAAAHUw/ywtGpZC6kLE/w1357-h531-no/2014-12-30%2B17.52.36.jpg)
 
