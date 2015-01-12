@@ -29,6 +29,11 @@ Repository를 추가할 필요없이 설치 가능한 목록에서 IMESupport를
 ###SideBarEnhancements
 사이드바의 기능을 확장시켜준다. 파일에 우클릭으로 메뉴를 열여보자.
 
+###MarkdownEditing
+깔끔한 마크다운 하이라이트를 볼 수 있다.
+Preferences - Package Settings - Markdown Editing - Markdown GFM Setting(User)에 다음 코드를 입력하면 파란색 하이라이트로 바꿔준다.
+
+    {"color_scheme": "Packages/Color Scheme - Default/Dawn.tmTheme"} 
 
 ##기타
 
