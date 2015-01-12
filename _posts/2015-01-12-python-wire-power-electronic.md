@@ -22,6 +22,8 @@ title: Python - 전선, 전원, 그리고 전기
 
 전원에서 전기를 보낸다는 생각으로 함수를 만들었다. 주변 전선이 주체. 제거는 생각하지 않았다.
 
+{% highlight python %}
+
     # 전선
     class Wire(object):
     
@@ -75,6 +77,8 @@ title: Python - 전선, 전원, 그리고 전기
         def removeWire(self, x, y):
             self[x][y].controller = None    # Wire가 제거될 때는 None을 대입해서 가비지 컬렉션이 작동할 수 있게 했다.
             self[x][y] = None
+
+{% endhighlight %}
 
 ###코드 검사
 
