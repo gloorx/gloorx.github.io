@@ -130,7 +130,7 @@ a:focus {
 }
       
 .post-body ul {
-    /*margin: 1.5em;*/
+    margin-left: 1.5em;
 }
 .post-body ol, .post-body li {
     font-size: 95%;
@@ -140,7 +140,7 @@ a:focus {
 
 .post-body pre {
     overflow: scroll;
-    margin: 1.5em 0.5em 1.5em 0.5em;
+    margin: 1.0em 0.0em 1.0em 0.5em;
     padding: 10px;
     color: #dddddd;
     background: rgba(0,0,0,0.8);
