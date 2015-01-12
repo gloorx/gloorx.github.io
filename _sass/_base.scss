@@ -52,7 +52,7 @@ body {
 }
 
 p {
-    margin-bottom: 1.0em;
+    margin-top: 1.0em;
 }
 a {
     color: $brand-color;
@@ -95,15 +95,15 @@ a:focus {
 /*--- 본문 ---*/
 .post-body h2 {
     font-size: 30px;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
 }
 .post-body h3 {
     font-size: 25px;
-    margin-top: 0.4em;
+    margin-top: 1.4em;
 }
 .post-body h4 {
     font-size: 21px;
-    margin-top: 0.3em;
+    margin-top: 1.3em;
 }
 
 .post-body a:visited {
@@ -130,12 +130,12 @@ a:focus {
 }
       
 .post-body ul {
-    margin: 1.5em;
+    /*margin: 1.5em;*/
 }
 .post-body ol, .post-body li {
     font-size: 95%;
     line-height:1.6;
-    margin-bottom: 0.5em;
+    /*margin-bottom: 0.5em;*/
 }
 
 .post-body pre {
