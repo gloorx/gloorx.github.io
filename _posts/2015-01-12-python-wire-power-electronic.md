@@ -216,7 +216,7 @@ power가 On될 때 함수와 Off될 때의 함수를 분리했다.
             self[x][y] = wire
             wire.x = x
             wire.y = y
-            wire.transmit_power()
+            wire.power_on()
     
         def removeWire(self, x, y):
             wire = self[x][y]  # power_off() 함수의 무한 실행을 막기위해 객체를    컨트롤러에서 제거하고  power_off()함수를 실행했다.
