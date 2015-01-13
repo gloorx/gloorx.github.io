@@ -63,7 +63,7 @@ title: Python - 전선, 전원, 그리고 전기
     
     
     # 컨트롤러
-    class Controller(Object):
+    class Controller(object):
         ...
     
         def setWire(self, wire, x, y):
@@ -143,7 +143,7 @@ title: Python - 전선, 전원, 그리고 전기
     
     
     # 컨트롤러
-    class Controller(Object):
+    class Controller(object):
         ...
     
         def setWire(self, wire, x, y):
@@ -209,7 +209,7 @@ power가 On될 때 함수와 Off될 때의 함수를 분리했다.
             self.power_on()
     
     # 컨트롤러
-    class Controller(Object):
+    class Controller(object):
         ...
     
         def setWire(self, wire, x, y):
@@ -276,10 +276,10 @@ power가 On될 때 함수와 Off될 때의 함수를 분리했다.
             if self.controller[self.x][self.y]:
                 self.power_on()
             else:
-                super(Totem, self).power_off()
+                super(Source, self).power_off()
     
     # 컨트롤러
-    class Controller(Object):
+    class Controller(object):
         ...
 
 ##코드 검사
