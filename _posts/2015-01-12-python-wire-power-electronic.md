@@ -113,26 +113,26 @@ title: Python - 전선, 전원, 그리고 전기
         ...
     
         def transmit_power(self):
-            if (self.x != 0) and self.field[self.x-1][self.y] and self.field[self.  x-1][self.y].power:
+            if (self.x != 0) and self.field[self.x-1][self.y] and self.field[self.x-1][self.y].power:
                 self.power = True
-            elif (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y]    and self.field[self.x+1][self.y].power:
+            elif (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y] and self.field[self.x+1][self.y].power:
                 self.power = True
-            elif (self.y != 0) and self.field[self.x][self.y-1] and self.field[self .x][self.y-1].power:
+            elif (self.y != 0) and self.field[self.x][self.y-1] and self.field[self.x][self.y-1].power:
                 self.power = True
-            elif (self.y != self.field.HEIGHT-1) and self.field[self.x][self.y+1]   and self.field[self.x][self.y+1].power:
+            elif (self.y != self.field.HEIGHT-1) and self.field[self.x][self.y+1] and self.field[self.x][self.y+1].power:
                 self.power = True
     
             if self.power:
-                if (self.x != 0) and self.field[self.x-1][self.y] and not self. field[self.x-1][self.y].power:
+                if (self.x != 0) and self.field[self.x-1][self.y] and not self.field[self.x-1][self.y].power:
                     self.field[self.x-1][self.y].transmit_power()
     
-                if (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y]  and not self.field[self.x+1][self.y].power:
+                if (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y] and not self.field[self.x+1][self.y].power:
                     self.field[self.x+1][self.y].transmit_power()
     
-                if (self.y != 0) and self.field[self.x][self.y-1] and not self. field[self.x][self.y-1].power:
+                if (self.y != 0) and self.field[self.x][self.y-1] and not self.field[self.x][self.y-1].power:
                     self.field[self.x][self.y-1].transmit_power()
     
-                if (self.y != self.field.HEIGHT-1) and self.field[self.x][self. y+1] and not self.field[self.x][self.y+1].power:
+                if (self.y != self.field.HEIGHT-1) and self.field[self.x][self.y+1] and not self.field[self.x][self.y+1].power:
                     self.field[self.x][self.y+1].transmit_power()
     
     
@@ -187,16 +187,16 @@ power가 On될 때 함수와 Off될 때의 함수를 분리했다.
         def power_off(self):
             self.power = False
     
-            if (self.x != 0) and self.field[self.x-1][self.y] and self.field[self.  x-1][self.y].power:
+            if (self.x != 0) and self.field[self.x-1][self.y] and self.field[self.x-1][self.y].power:
                 self.field[self.x-1][self.y].power_off()
     
-            if (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y] and  self.field[self.x+1][self.y].power:
+            if (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y] and self.field[self.x+1][self.y].power:
                 self.field[self.x+1][self.y].power_off()
     
-            if (self.y != 0) and self.field[self.x][self.y-1] and self.field[self.  x][self.y-1].power:
+            if (self.y != 0) and self.field[self.x][self.y-1] and self.field[self.x][self.y-1].power:
                 self.field[self.x][self.y-1].power_off()
     
-            if (self.y != self.field.HEIGHT-1) and self.field[self.x][self.y+1]     and self.field[self.x][self.y+1].power:
+            if (self.y != self.field.HEIGHT-1) and self.field[self.x][self.y+1] and self.field[self.x][self.y+1].power:
                 self.field[self.x][self.y+1].power_off()
     
     
@@ -284,17 +284,71 @@ power가 On될 때 함수와 Off될 때의 함수를 분리했다.
 
 ##코드 검사
 
-전선 배치
-
-    [+][ ][+][+]
-    [+][ ][+][ ]
-    [+][ ][!][ ]
-    [+][+][+][ ]
-
-제거 예시
+제거 예시 1
 
     [-][ ][-][-]
     [-][ ][-][ ]
     [-][ ][ ][ ]
     [-][-][-][ ]
 
+제거 예시 2
+(2, 2)의 전선을 제거하면 함수에서 빠져나오지 못하고 점점 깊게 들어가 에러가 난다.
+
+    [!][ ][ ][ ]
+    [+][ ][ ][ ]
+    [+][+][+][ ]
+    [ ][ ][ ][ ]
+    # 에러
+
+##5차시
+
+전원에 인접한 전선은 power_off()를 실행해 power가 Off가 되어도 전원의 power_off()에 의해 if문을 지나면서 다시 On 상태가 된다. On 상태에서 다른 전선의 power_off()를 실행하면 두 전선은 서로의 power_off()를 계속 실행하게 된다. if문의 순서에 따라 특정 방향에서만 이 문제가 발생한다.
+
+power_off()의 if문에서 power가 Off인지 확인하도록 했다.
+
+    # 전선
+    class Wire(object):
+        ...
+        def power_off(self):
+            self.power = False
+    
+            if (self.x != 0) and self.field[self.x-1][self.y] and self.field[self.x-1][self.y].power:
+                if self.power == False:
+                    self.field[self.x-1][self.y].power_off()
+    
+            if (self.x != self.field.WIDTH-1) and self.field[self.x+1][self.y] and self.field[self.x+1][self.y].power:
+                if self.power == False:
+                    self.field[self.x+1][self.y].power_off()
+    
+            if (self.y != 0) and self.field[self.x][self.y-1] and self.field[self.x][self.y-1].power:
+                if self.power == False:
+                    self.field[self.x][self.y-1].power_off()
+    
+            if (self.y != self.field.HEIGHT-1) and self.field[self.x][self.y+1] and self.field[self.x][self.y+1].power:
+                if self.power == False:
+                    self.field[self.x][self.y+1].power_off()
+    
+    
+    # 전원
+    class Source(Wire):
+        ...
+    
+    # 컨트롤러
+    class Controller(object):
+        ...
+
+##코드 검사
+
+전선배치
+
+    [!][ ][ ][ ]
+    [+][ ][ ][ ]
+    [+][+][+][ ]
+    [ ][ ][ ][ ]
+
+제거 예시 2
+
+    [!][ ][ ][ ]
+    [+][ ][ ][ ]
+    [+][+][ ][ ]
+    [ ][ ][ ][ ]
