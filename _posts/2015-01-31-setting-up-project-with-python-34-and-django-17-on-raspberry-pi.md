@@ -63,7 +63,7 @@ mySQL을 쓸 것이기 때문에 데이터베이스를 미리 만들어 주어�
 
 INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무시했다.
 
-#virtualenv
+##virtualenv
 
 *3.x의 파이썬을 쓴다면 virtualenv 대신 아래에 pyvenv를 설치하자.*
 
@@ -84,7 +84,7 @@ INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무�
 
     (env)$ deactivate           # 시스템 파이썬으로 복귀
 
-#pyvenv
+##pyvenv
 3.3에서부터 pyvenv에 기본으로 설치되어 있다. 다만 3.3에서는 pip를 가상 환경을 만들 때마다 설치해주어야 한다. 3.4에서는 pip까지 기본으로 설치되어 있다.
 
     $ mkdir django_tests
@@ -93,17 +93,17 @@ INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무�
     $ source env/bin/activate   # env의 파이썬 활성화
     (env)$ deactivate           # 시스템 파이썬으로 복귀
 
-#django 설치
+##django 설치
 
 가상환경을 다시 활성화 시키고 장고를 설치한다.
 
     (env)$ pip install django
 
-#django 프로젝트 만들기
+##django 프로젝트 만들기
 
     (env)$ django-admin.py startproject django_test01
 
-#github 연동
+##github 연동
 
     (env)$ cd django_test01
     (env)$ git init
@@ -112,7 +112,7 @@ INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무�
 
 이미 있던 프로젝트를 깃허브에 올리려면 remote하고 pull을 먼저해야 push할 수 있다. github연동부터 하고 `django-admin.py startproject`하면 빈 디렉토리가 아니라면서 프로젝트가 만들어지지 않는다.
 
-#python 3.x django에 mySQL 설정하기
+##python 3.x django에 mySQL 설정하기
 
     (env)$ pip install https://dev.mysql.com/get/Downloads/Connector-Python/mysql-connector-python-2.0.1.tar.gz
 
@@ -133,7 +133,7 @@ INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무�
         }
     }
 
-#django 실행
+##django 실행
 
     (env)$ ./manage.py runserver
 
@@ -146,27 +146,27 @@ INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무�
 
 웹 브라우저에서 http://0.0.0.0:8000 접속 후  "It worked!"를 확인할 수 있다.
 
-#데이터베이스 사용하기
+##데이터베이스 사용하기
 
     (env)$ python manage.py migrate
     (env)$ python manage.py createsuperuser
 
 migrate를 하면 프로젝트가 데이터베이스를 사용할 수 있게 된다. createsuperuser로 프로젝트 데이터베이스에서 사용할 관리자 권한을 만든다.
 
-#접속해보기
+##접속해보기
 
     (env)$ ./manage.py runserver 0.0.0.0:8000
 
 웹 브라우저에서 http://0.0.0.0:8000/admin 접속 후 슈퍼유저 로그인 확인
 
-#어플리케이션 생성
+##어플리케이션 생성
 
 django 프로젝트는 django 어플리케이션들로 구성된다. 각각의 기능을 가진 어플리케이션이 모여 하나의 프로젝트가 된다.
 
     (env)$ ./manage.py startapp 앱이름
 
 
-#프로젝트에 어플리케이션 추가
+##프로젝트에 어플리케이션 추가
 
 `settings.py` 파일을 수정하여 어플리케이션을 프로젝트에 추가시켜준다.
 
@@ -181,11 +181,11 @@ django 프로젝트는 django 어플리케이션들로 구성된다. 각각의 �
         '앱이름',
     )
 
-#수정 내용에 대한 migration을 생성.
+##수정 내용에 대한 migration을 생성.
 
     (env)$ ./manage.py makemigrations
 
-#수정 내용을 데이터베이스에 적용
+##수정 내용을 데이터베이스에 적용
 
     (env)$ ./manage.py migrate
 
