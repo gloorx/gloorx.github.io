@@ -21,6 +21,12 @@ Raspberry Pi 전용 OS인 Raspbian에서 작업했다. Debian에서도 똑같이
 
     $ sudo apt-get install vim
 
+##tree 설치
+
+디렉토리 구조를 시각적으로 보여준다. 다른 리눅스에서는 기본으로 설치되어 있던데, 라즈비안에는 설치를 해주어야 한다.
+
+    $ sudo apt-get install tree
+
 ##mySQL 설치, 실행
 
 파이썬에 내장된 sqlite를 사용하려면 mySQL은 설치하지 않아도 된다. 이 글에서는 sqlite 대신 mySQL을 사용하기 위해 설치한다.
@@ -118,7 +124,7 @@ INFO: Can't locate Tcl/Tk libs and/or headers라고도 떴지만 일단은 무�
 
 최신 버전 주소는 http://dev.mysql.com/downloads/connector/python/의 Platform Independent에서 확인할 수 있다.
 
-    (env)$ nano django_test01/settings.py
+    (env)$ vim django_test01/settings.py
 
 `settings.py`에서 다음 부분을 찾은 다음, ENGINE과 NAME을 다음과 같이 수정한다. NAME은 위에 mySQL에 접속해 만들었던 데이터베이스 이름을 적어준다. django에서 sqlite 대신 mySQL을 사용하기 위해선 USER와 PASSWORD 항목을 만들어 mySQL 설치시 입력했던 값들을 넣어준다.
 
@@ -170,7 +176,7 @@ django 프로젝트는 django 어플리케이션들로 구성된다. 각각의 �
 
 `settings.py` 파일을 수정하여 어플리케이션을 프로젝트에 추가시켜준다.
 
-    (env)$ nano django_test01/settings.py
+    (env)$ vim django_test01/settings.py
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
@@ -181,11 +187,13 @@ django 프로젝트는 django 어플리케이션들로 구성된다. 각각의 �
         '앱이름',
     )
 
-##수정 내용에 대한 migration을 생성.
+##model 수정 내용에 대한 migration을 생성.
 
-    (env)$ ./manage.py makemigrations
+    (env)$ ./manage.py makemigrations [앱이름]
 
-##수정 내용을 데이터베이스에 적용
+앱이름을 생략하면 프로젝트 전체 앱의 model에 대한 migration을 생성하는 것 같다.
+
+##model 수정 내용을 데이터베이스에 적용
 
     (env)$ ./manage.py migrate
 
