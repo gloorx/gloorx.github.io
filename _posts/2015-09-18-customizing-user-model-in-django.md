@@ -14,6 +14,7 @@ django는 두 가지 경우 모두 계정으로써의 기능을 구현할 수 �
 계정으로 쓰일 모델을 직접 만들자.
 
     class User(AbstractBaseUser, PermissionsMixin):
+
 AbstractBaseUser와 PermissionsMixin은 django에서 제공하는 클래스다. AbstractBaseUser는 계정 모델에 필요한 메소드들을 제공하고 있고, PermissionsMixin은 계정의 권한을 제어할 메소드를 제공한다.
 
 필요한 필드들도 넣어 주자.
