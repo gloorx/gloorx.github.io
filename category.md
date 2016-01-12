@@ -3,7 +3,7 @@ layout: page
 title: Category
 permalink: /category/
 ---
-찾으시는 글이 있다면 **<code>Ctrl + F</code>**를 눌러 브라우저의 검색기능을 이용하세요.
+You can search a specific post. Use brower's search feature by pressing **<code>Ctrl + F</code>**
 
 {% for tag in site.tags %}
     {% assign t = tag | first %}

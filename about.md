@@ -3,13 +3,15 @@ layout: page
 title: About
 permalink: /about/
 ---
-- **김상원 (Kim Sangwon)**
 - **pueue** (/ˈpjuː/***PEW***)
 <br/>
-- **pueuepueue** (/ˈpjuːpjuː/***PEWPEW***)
 
-이 블로그는 2014년 12월 1일부터 운영하기 시작했습니다. 원래는 해외 UX 칼럼에 대한 내용 위주로 포스팅하면서 UX 공부와 영어 실력 향상을 위해 시작했지만, 지금은 정해진 주제 없이 그때 그때 관심가는 것들을 쓰고 있습니다. 글쓰는 능력이 부족하다보니 긴 글을 잘 쓰지 않습니다. 블로그를 직접 디자인 했는데 아직도 여기저기 마음에 안드는 곳이 많습니다. 읽기 편한 블로그를 만드려고 부가적인 기능은 제거했고, 더 읽기 편하게 하기 위해 기능적인 부분이나 디자인은 점진적으로 개선할 예정입니다.
+I know my English is terrible.
 
-블로그를 구독하고 싶으신 분은 [이것](http://pueue.com/feed.xml)을 이용하시면 됩니다.
+I started this blog at December 1st, 2014. But I started to post on this blog in English at January 12th, 2016.
 
-댓글 기능을 넣지 않았습니다. 글에 대해 피드백을 주고 싶으시면 제 트위터([@pueuepueue](http://twitter.com/pueuepueue))를 통해 연락주세요. 맞춤법, 오타, 번역 지적도 환영합니다.
+This blog is for improving my English and recording my programming stuffs.
+
+There isn't the comment feature in this blog. You can give me feedback on anything at my twitter([@pueuepueue](http://twitter.com/pueuepueue)).
+
+feed : [http://pueue.com/feed.xml](http://pueue.com/feed.xml)
