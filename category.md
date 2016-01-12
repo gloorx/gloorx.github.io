@@ -14,7 +14,7 @@ You can search a specific post. Use brower's search feature by pressing **<code>
     {% if post.tags contains t %}
    <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="post-date">{{ post.date | date: "%Y년 %m월 %-d일"  }}</span>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%-d"  }}</span>
   </li>
   {% endif %}
 {% endfor %}
