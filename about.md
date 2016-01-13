@@ -6,7 +6,7 @@ permalink: /about/
 - **pueue** (/ˈpjuː/***PEW***)
 <br/>
 
-I know my English is terrible.
+Yes. I know my English is terrible.
 
 I started this blog at December 1st, 2014. But I started to post on this blog in English at January 12th, 2016.
 
