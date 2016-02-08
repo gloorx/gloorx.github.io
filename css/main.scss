@@ -3,34 +3,41 @@
 ---
 @charset "utf-8";
 
-/* KoPub Dotum */
+/* Nanum Barun Gothic */
 @import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css);
 
 
 // Our variables
 $base-font-family: 'Nanum Barun Gothic', 'AppleGothic', 'DotumChe', 'Arial',' Helvetica', 'sans-serif';
-$base-font-size:   21px;
-$menu-font-size:   20px;
-$small-font-size:  16px;
-$base-line-height: 1.8;
+$base-font-size: 17px;
+$base-line-height: 1.5;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.75;
 
-$text-color:       rgba(0,0,0,0.7);
-$background-color: #ffffff;
-$brand-color:      #0099bb;
-$menu-hover-color: #f4f4f4;
-$visited-link-color:#CD0000;
+$on-palm:   600px;
+$on-laptop: 850px;
 
-$gray-color:       #999999;
+$text-color: rgba(60, 60, 60, 1);
+$highlight-background-color: #e0e0e0;
+$background-color:   #ffffff;
+$brand-color:        #0099bb;
+$menu-hover-color:   #f4f4f4;
+$visited-link-color: #CD0000;
 
+$gray-color: #999999;
 
-$on-palm:          600px;
-$on-laptop:        850px;
+$spacing-unit: 30px;
 
+$menu-font-size: 20px;
 
+$code-background-color: #f8f8f8;
+$code-border-color: #e5e5e5;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "post",
+        "work",
         "layout",
         "syntax-highlighting"
 ;

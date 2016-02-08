@@ -1,0 +1,54 @@
+---
+title: Works
+permalink: /works/
+---
+<div markdown="0">
+<div class="work-list">
+
+{% assign released = site.works | where: 'status', 'released' | sort: 'date' | reverse %}
+{% for work in released %}
+<div class="work">
+	<div class="work-icon">
+		<img src="{{ site.url }}/works_img/{{ work.image.icon }}" />
+	</div>
+	<div class="work-content">
+		<div class="work-title">
+		    <a href="{{ work.url }}">{{ work.title }}</a><br />
+	    </div>
+	    <div class="work-meta">
+	       	<time><small>{{ work.date | date: "%b %Y"  }}</small></time><br />
+	   	</div>
+	   	<div class="work-excerpt">
+	    	<small>{{ work.excerpt | truncate: 240}}</small>
+	    </div>
+    </div>
+</div>
+{% endfor %}
+
+{% assign draft = site.works | where: 'status', 'draft' | sort: 'date' | reverse %}
+{% if draft.size > 0 %}
+<br />
+<h5>Draft</h5>
+{% endif %}
+{% for work in draft %}
+<div class="work">
+	<div class="work-icon">
+		<img src="{{ site.url }}/works_img/{{ work.image.icon }}" />
+	</div>
+	<div class="work-content">
+		<div class="work-title">
+		    <a href="{{ work.url }}">{{ work.title }}</a><br />
+	    </div>
+	    <div class="work-meta">
+	       	<time><small>{{ work.date | date: "%b %Y"  }}</small></time><br />
+	   	</div>
+	   	<div class="work-excerpt">
+	    	<small>{{ work.excerpt | truncate: 240}}</small>
+	    </div>
+    </div>
+</div>
+{% endfor %}
+
+</div>
+
+</div>

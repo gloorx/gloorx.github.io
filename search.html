@@ -1,0 +1,28 @@
+---
+title: Search
+permalink: /search/
+---
+<div markdown="0">
+  <!-- Search results placeholder -->
+  <p data-search-found>
+    <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
+  </p>
+  <div data-search-results></div>
+
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+    <div>
+      <span class="h3"><a href="##Url##">##Title##</a></span>
+      <time>##Date##</time><br />
+      ##Snippet##
+    </div>
+    <br />
+  </script>
+
+  <!-- jQuery - required but can be moved to the <head> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!-- Search script - Must appear after template -->
+  <script src="/search.js"></script>
+</div>

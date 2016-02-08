@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang=”ko”>
   {% include head.html %}
 
   <body>
-
+  <div id='container'>
     {% include header.html %}
+    {% include navigator.html %}
 
-    <div class="content">
-        {{ content }}
-    </div>
+    <main>{{ content }}</main>
 
     {% include footer.html %}
-
+  </div>
   </body>
 
 </html>

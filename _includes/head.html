@@ -42,14 +42,5 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <script type="text/javascript">
-    function show_Eng(id){
-        var eng = document.getElementById(id);
-
-        if(eng.style.display=="block"){ eng.style.display = "none"; }
-        else{ eng.style.display = "block"; }
-    }
-    </script>
-
     {% include analytics.html %}
 </head>

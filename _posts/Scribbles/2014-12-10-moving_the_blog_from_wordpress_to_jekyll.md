@@ -1,7 +1,9 @@
 ---
-tag: Scribbles
 title: Wordpress에서 Jekyll로
+published: true
+category: Scribbles
 ---
+
 Raspberry pi + Wordpress 조합에서 [Github-pages](https://pages.github.com) + [Jekyll](http://jekyllrb.com) 조합으로 블로그를 새로 만들었다. 옮기게 된 이유는
 
 - 무거운 Wordpress를 돌리기엔 Raspberry pi가 너무 느리다. 캐시가 초기화되면 로딩이 5초 이상 걸린다.

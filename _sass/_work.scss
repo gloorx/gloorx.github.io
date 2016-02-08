@@ -1,0 +1,48 @@
+.work-list {
+	line-height: 1.2;
+	overflow: auto;
+
+	.work {
+		height: 120px;
+		margin-bottom: 2em;
+	}
+	.work-icon {
+		clear: both;
+		width: 160px;
+	    height: 120px;
+	    line-height: 100px;
+	    margin-right: 20px;
+	    text-align: center;
+		float: left;
+
+		img {
+			height: auto;
+		    width: auto;
+		    max-height: 100%;
+		    max-width: 100%;
+		    vertical-align: middle;
+		}
+	}
+	.work-content {
+		float: left;
+		padding: 4px 0 4px 10px;
+
+		.work-title {
+			font-weight: bold;
+		}
+
+		.work-meta {
+			margin-bottom: $base-font-size;
+		}
+		.work-excerpt {
+			margin-top: 10px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 850px) {
+
+	
+
+}

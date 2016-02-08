@@ -9,14 +9,38 @@ github_username:  pueue
 
 
 # Build settings
+gems: [jekyll-paginate]
 markdown: kramdown
+kramdown:
+  input: GFM
 
-permalink: "/:title"
-paginate: 10
+permalink: ":year-:title/"
+
+# Collections (unstable)
+collections:
+  works:
+    output: true
+
+paginate: 2
+paginate_path: ":num/"
 
 defaults:
     -
         scope:
             path: "" # 여기에서 빈 문자열은 프로젝트 내의 모든 파일을 의미합니다
+            type: "posts"
         values:
             layout: "post"
+    -
+        scope:
+            path: ""
+            type: "pages"
+        values:
+            layout: "page"
+            search_omit: true
+    -
+        scope:
+            path: ""
+            type: works
+        values:
+            layout: work

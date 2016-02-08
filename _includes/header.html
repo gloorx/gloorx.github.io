@@ -1,43 +1,4 @@
-<header class="site-header">
-
-  <!-- 블로그 제목 -->
-  <div class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
-
-  <!-- 블로그 설명 -->
-  <div class="description">{{ site.description }}</div>
-
-  <!-- 메뉴 -->
-  <nav class="site-nav">
-    <ul>
-        <li>
-          <a href="{{ site.baseurl }}/about/">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/">
-            Newest
-          </a>
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/category/">
-            Category
-          </a>
-        </li>
-        <li>
-          <a href="{{ site.baseurl }}/archive/">
-            Archive
-          </a>
-        </li>
-      <!-- search form -->
-      <!--
-        <li>
-          <form method="get" action="">
-            <input type="text" name="s" placeholder="Search" required/>
-          </form>
-        </li>
-      -->
-    </ul>
-  </nav>
-
+<header id="site-header">
+    <h1 id="title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <p id="description">{{ site.description }}</p>
 </header>
