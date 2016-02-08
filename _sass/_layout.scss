@@ -138,6 +138,7 @@ input {
 
 
 main {
+    padding: 0 5px 0 5px;
     max-width: $on-laptop;
     margin: 0 auto;
 
@@ -197,46 +198,47 @@ main {
 
 
 
-// @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
 
-//     #site-header {
-//         #title {
-//             font-size: 40px;
-//         }
-//         #description {
-//             font-size: 13px;
-//         }
-//     } 
+    #site-header {
+        #title {
+            font-size: 40px;
+        }
+        #description {
+            font-size: 13px;
+        }
+    } 
 
-//     #site-nav {
-//         font-size: $menu-font-size * 0.75;
-//         padding-bottom: 0.3em;
-//         border-bottom: 4px solid $brand-color;
 
-//         ul li a {
-//             padding: 0 0.5em;
-//         }
-//     }
+    #site-nav {
+        font-size: $menu-font-size * 0.75;
+        padding-bottom: 0.3em;
+        border-bottom: 4px solid $brand-color;
 
-//     form input[type="text"] {
-//         font-size: $menu-font-size * 0.75;
-//         width: 48px;
-//         padding: 0.3em 0.5em;
-//     }
+        ul li a {
+            padding: 0 0.5em;
+        }
+    }
 
-//     #pagination {
-//         font-size: 13px;
+    form input[type="text"] {
+        font-size: $menu-font-size * 0.75;
+        width: 48px;
+        padding: 0.3em 0.5em;
+    }
 
-//         #previous, #next {
-//             line-height: 3em;
-//             padding: 0 1em;
-//             border-radius: 0.25em;
-//         }
-//     }
+    #pagination {
+        font-size: 13px;
 
-//     #site-footer {
-//         font-size: 13px;
-//     }
-// }
+        #previous, #next {
+            line-height: 3em;
+            padding: 0 1em;
+            border-radius: 0.25em;
+        }
+    }
+
+    #site-footer {
+        font-size: 13px;
+    }
+}
 
 

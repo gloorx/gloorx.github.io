@@ -3,36 +3,33 @@
 	overflow: auto;
 
 	.work {
+
 		height: 120px;
 		margin-bottom: 2em;
-	}
-	.work-icon {
-		clear: both;
-		width: 160px;
-	    height: 120px;
-	    line-height: 100px;
-	    margin-right: 20px;
-	    text-align: center;
-		float: left;
 
-		img {
-			height: auto;
-		    width: auto;
-		    max-height: 100%;
-		    max-width: 100%;
-		    vertical-align: middle;
+		.work-icon {
+			clear: both;
+			width: 160px;
+		    height: 120px;
+		    line-height: 100px;
+		    margin-right: 20px;
+		    text-align: center;
+			float: left;
+
+			img {
+				height: auto;
+			    width: auto;
+			    max-height: 100%;
+			    max-width: 100%;
+			    vertical-align: middle;
+			}
 		}
-	}
-	.work-content {
-		float: left;
-		padding: 4px 0 4px 10px;
-
-		.work-title {
-			font-weight: bold;
-		}
-
-		.work-meta {
-			margin-bottom: $base-font-size;
+		.work-header {
+			padding-top: 10px;
+			.work-title {
+				
+				font-weight: bold;
+			}
 		}
 		.work-excerpt {
 			margin-top: 10px;
@@ -43,6 +40,25 @@
 
 @media screen and (max-width: 850px) {
 
-	
+	.work-list {
+		.work {
+			height: 60px;
+			margin-bottom: 5em;
+
+			.work-icon {
+				width: 80px;
+			    height: 60px;
+			    line-height: 50px;
+			    margin-right: 10px;
+			}
+			.work-header {
+				padding-top: 10px;
+			}
+			.work-excerpt {
+				margin: 30px 10px 0 10px;
+			}
+		}
+		
+	}
 
 }

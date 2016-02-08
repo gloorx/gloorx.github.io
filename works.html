@@ -11,16 +11,16 @@ permalink: /works/
 	<div class="work-icon">
 		<img src="{{ site.url }}/works_img/{{ work.image.icon }}" />
 	</div>
-	<div class="work-content">
+	<div class="work-header">
 		<div class="work-title">
 		    <a href="{{ work.url }}">{{ work.title }}</a><br />
 	    </div>
 	    <div class="work-meta">
-	       	<time><small>{{ work.date | date: "%b %Y"  }}</small></time><br />
+	       	<time><small>{{ work.date | date: "%b %Y"  }}</small></time>
 	   	</div>
-	   	<div class="work-excerpt">
-	    	<small>{{ work.excerpt | truncate: 240}}</small>
-	    </div>
+   	</div>
+   	<div class="work-excerpt">
+    	<small>{{ work.excerpt | truncate: 240}}</small>
     </div>
 </div>
 {% endfor %}

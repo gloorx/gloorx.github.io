@@ -73,12 +73,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-img.icon {
-    max-width:230px;
-    max-height:95px;
-    width: auto;
-    height: auto;
-}
 
 
 /*
@@ -155,33 +149,6 @@ blockquote {
 }
 
 
-/*
-    Code formatting
-*/
-pre,
-code {
-    font-size: 15px;
-    background: #f8f8f8;
-    border-radius: 5px;
-    border: 1px solid $code-border-color;
-
-    background: $code-background-color;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
 
 time {
     font-size: $small-font-size;
