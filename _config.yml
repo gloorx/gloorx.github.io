@@ -10,9 +10,10 @@ github_username:  pueue
 
 # Build settings
 gems: [jekyll-paginate]
+
 markdown: kramdown
 kramdown:
-  input: GFM
+    input: GFM
 
 permalink: ":year-:title/"
 
