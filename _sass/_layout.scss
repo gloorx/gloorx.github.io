@@ -60,6 +60,7 @@
  * Search Form
  */
 form input[type="text"] {
+    font-family: $base-font-family;
     border: 0 none;
     font-size: $menu-font-size;
     color: $text-color;

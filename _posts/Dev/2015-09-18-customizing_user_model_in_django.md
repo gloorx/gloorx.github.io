@@ -30,7 +30,6 @@ is_staff = models.BooleanField(default=False)
 ```
 
 비밀번호 필드와 마지막 접속 시간 필드는 위 클래스를 상속했다면 자동으로 삽입된다.
-
 어떤 필드를 계정의 id로 할 것인지 선언하자.
 
 ```python

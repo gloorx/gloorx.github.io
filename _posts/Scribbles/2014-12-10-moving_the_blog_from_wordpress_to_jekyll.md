@@ -1,6 +1,6 @@
 ---
 title: Wordpress에서 Jekyll로
-published: true
+published: false
 category: Scribbles
 ---
 

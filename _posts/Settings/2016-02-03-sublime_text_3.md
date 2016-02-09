@@ -28,7 +28,9 @@ Add below codes in `~/.codeintel/config` or `<PROJECT_ROOT>/.codeintel/config`
 #### SublimeLinter
 
 #### SublimeLinter-flake8
-`$ pip install flake8`
+```
+$ pip install flake8
+```
 
 Add below codes in `Preference -> Package Settings -> SublimeLinter -> Setting - User`
 
