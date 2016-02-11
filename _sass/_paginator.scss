@@ -1,0 +1,42 @@
+#paginator {
+    max-width: $large-breakpoint;
+
+    margin: 0.5em 0em 0.5em 0em;
+    line-height: 2em;
+    overflow: hidden;
+    font-size: $large-font-size;
+
+    /*--- 페이지 버튼 ---*/
+    #paginator-older, #paginator-newer {
+        display: block;
+        text-align: center;
+        height: 2em;
+        padding: 0 0.5em;
+        border-radius: 0.25em;
+    }
+    #paginator-older {
+        float: left;
+    }
+    #paginator-newer {
+        float: right;
+    }
+    a{
+        text-decoration: none;
+
+        &:hover {
+            background: $menu-hover-color;
+            font-weight:bold;
+        }
+    }
+
+    @media (min-width: $large-breakpoint) {
+        
+        line-height: 3em;
+        font-size: $menu-font-size;
+
+        #paginator-older, #paginator-newer {
+            height: 3em;
+            padding: 0 1em;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+#site-footer{
+    padding: 0.5em 0em 0.5em 0em;
+    border-top: 3px solid $brand-color;
+    text-align: center;
+
+    @media (min-width: $large-breakpoint) {
+        border-top: 3px solid $brand-color;
+    }
+}

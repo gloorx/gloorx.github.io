@@ -1,0 +1,131 @@
+#site-nav {
+    padding-bottom: 0.3em;
+    line-height: 2em;
+    font-size: $large-font-size;
+    border-bottom: 3px solid $brand-color;
+
+    @media (min-width: $large-breakpoint) {
+        font-size: $menu-font-size;
+        border-bottom: 5px solid $brand-color;
+    }
+
+    ul {
+        margin: 0; padding: 0; 
+        list-style-type: none; 
+        list-style-image: none; 
+        text-align: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                color: $base-text-color;
+                display: block;
+                padding: 0 0.6em;
+                border-radius: 0.25em;
+                text-decoration: none;
+
+                @media (min-width: $large-breakpoint) {
+                    padding: 0 1em;
+                }
+
+                &:hover {
+                    color: $brand-color;
+                    background: $menu-hover-color;
+                    text-decoration: none;
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+
+
+    /**
+     * Search Form
+     */
+    form input[type="text"] {
+        font-family: $base-font-family;
+        border: 0 none;
+        text-align: center;
+        font-size: $large-font-size;
+        color: $base-text-color;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        width: 4.5em;
+
+        padding: 0.4em 0.6em;
+        border-radius: 0.25em;
+        text-decoration: none;
+        cursor: pointer;
+
+        @media (min-width: $large-breakpoint) {
+            font-size: $menu-font-size;
+            padding: 0.4em 1em;
+            width: 5.2em;
+        }
+    }
+    form input[type="text"]:hover {
+        background: $menu-hover-color;
+        text-decoration: none;
+        font-weight:bold;
+    }
+    form input[type="text"]:focus {
+        background: $menu-hover-color;
+        text-decoration: none;
+        cursor: auto;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: $base-text-color;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+    }
+    input:hover::-webkit-input-placeholder {
+        color: $brand-color;
+    }
+    input:focus::-webkit-input-placeholder {
+        color: #999;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $base-text-color;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        opacity: 1;
+    }
+    input:hover:-moz-placeholder {
+        color: $brand-color;
+        opacity: 1;
+    }
+    input:focus:-moz-placeholder {
+        color: $gray-color;
+        opacity: 1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $base-text-color;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        opacity: 1;
+    }
+    input:hover::-moz-placeholder {
+        color: $brand-color;
+        opacity: 1;
+    }
+    input:focus::-moz-placeholder {
+        color: $gray-color;
+        opacity: 1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $base-text-color;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+    }
+    input:hover:-ms-input-placeholder {
+        color: $brand-color;
+    }
+    input:focus:-ms-input-placeholder {
+        color: $gray-color;
+    }
+    input {
+        outline-style: none;
+    }
+}
+

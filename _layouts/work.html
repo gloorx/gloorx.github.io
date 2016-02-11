@@ -2,30 +2,22 @@
 layout: default
 ---
 <article>
-	<!-- POST TITLE -->
-	<header class="post-header">
-		<h1 class="post-title">
-			<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-		</h1>
-		<time>{% if page.status == "released" %}released {% else %}draft {% endif %}
-		at {{ page.date | date: "%b %Y" }}</time>
-	</header>
-	<br />
+	<h1 class="post-title">
+		<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+	</h1>
 
-	<!-- POST BODY -->
-	<article class="post-body">
+	<time class="work-date" datetime="{{ page.date | date_to_xmlschema }}">
+		{% if page.status == "released" %}released {% else %}draft {% endif %}
+		at {{ page.date | date: "%b %Y" }}
+	</time>
+	<br /><br />
 
-		<div class="post-screenshot">
-		{% for screenshot in page.image.screenshots %}
-			<img style="width: 100%; max-width: 200px; vertical-align: middle" src="{{ site.url }}/works_img/{{ screenshot }}" />
-		{% endfor %}
-		</div>
-		<br /><br />
+	<div class="post-screenshot">
+	{% for screenshot in page.image.screenshots %}
+		<img style="width: 100%; max-width: 200px; vertical-align: middle" src="{{ site.url }}/works_img/{{ screenshot }}" />
+	{% endfor %}
+	</div>
 
-		{{ content }}
-	</article>
-	<!-- POST DATE -->
-	<footer class="post-footer">
-	</footer>
+	{{ content }}
 
 </article>

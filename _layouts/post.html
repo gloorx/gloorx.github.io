@@ -1,21 +1,12 @@
 ---
 layout: default
 ---
-<article>
-	<!-- POST TITLE -->
-	<header class="post-header">
-		<h1 class="post-title">
-			<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-		</h1>
-	</header>
+<article class="post">
+	<h1 class="post-title">
+		<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+	</h1>
 
-	<!-- POST BODY -->
-	<article class="post-body">
-		{{ content }}
-	</article>
+	{{ content }}
 
-	<!-- POST DATE -->
-	<footer class="post-footer">
-		<time>{{ page.date | date: "%b %-d, %Y" }}</time>
-	</footer>
+	<time class="post-date" datetime="{{ page.date | date_to_xmlschema }}"><small>{{ page.date | date: "%b %-d, %Y" }}</small></time>
 </article>

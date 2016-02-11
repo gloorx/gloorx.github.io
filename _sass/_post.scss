@@ -1,152 +1,79 @@
+main {
+    padding: 0 5px 0 5px;
+    max-width: $large-breakpoint;
+    margin: 0 auto;
+
+    .posts>article{
+        border-top: 3px solid $brand-color;
+
+        &:first-child {
+            border-top: 0px;
+        }
+    }
+}
+
 /*--- POST TITLE ---*/
 .post-title {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    margin: 1.5em 0px 1.0em 0px;
+    margin: 1em 0 0.3em 0;
 
     a {
-        color: $text-color;
+        color: $base-text-color;
         text-decoration: none;
         &:hover {
             color: $brand-color;
         }
     }
+
+    @media (min-width: $large-breakpoint) {
+        font-size: 40px;
+        
+        margin: 1.5em 0px 1.0em 0px;
+    }
     
 }
 /*--- POST BODY ---*/
-.post-body {
-    border-top: 0px;
-
-    h1, .h1 {
-        font-size: $base-font-size * 1.8;
-        margin-top: 1.0em;
-    }
-    h2, .h2 {
-        font-size: $base-font-size * 1.6;
-        margin-top: 0.9em;
-    }
-    h3, .h3 {
-        font-size: $base-font-size * 1.4;
-        margin-top: 0.8em;
-    }
-    h4, .h4 {
-        font-size: $base-font-size * 1.2;
-        margin-top: 0.7em;
-    }
-    h5, .h5 {
-        font-size: $base-font-size * 1.0;
-        margin-top: 0.5em;
-    }
-          
-    iframe, object {
-        max-width: 100%;
-        /*height: auto;*/
-    }
-          
-          
-    ol, ul {
-        margin-left: 1.0em;
-        margin-bottom: 0.7em;
-    }
-    li {
-        font-size: 95%;
-        line-height:1.6;
-    }
-
-
-    /*
-    Code formatting
-    */
-    pre,
-    code {
-        font-size: 15px;
-        background: #f8f8f8;
+.post {
+    code,
+    pre {
+        font-family: $code-font-family;
         border-radius: 5px;
         border: 1px solid $code-border-color;
-
-        background: $code-background-color;
     }
 
     code {
-        padding: 1px 5px;
+        padding: .25em .5em;
+        font-size: 85%;
+        color: $code-text-color;
+        background-color: $code-background-color;
+        border-radius: 3px;
     }
 
     pre {
-        padding: 8px 12px;
+        margin-top: 0;
+        margin-bottom: 1rem;
         overflow-x: auto;
+    }
 
-        > code {
-            border: 0;
-            padding-right: 0;
-            padding-left: 0;
-        }
+    pre code {
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        color: inherit;
+        background-color: transparent;
     }
 
 }
 
 
 /*--- POST DATE ---*/ 
-.post-footer {
-    padding: 0;
-    margin-top: 1em;
-    margin-bottom: 2em;
+.post-date {
+    margin: 1em 0.5em;
     text-align: right;
-}
-.post-footer time {
-    display: inline-block;
-    margin: 0em 0.5em 0em 0.5em;
-}
+    display: block;
 
-
-
-@media screen and (max-width: 850px) {
-
-    .post-title {
-        font-size: 25px;
-        margin: 1em 0px 1em 0px;
+    @media (min-width: $large-breakpoint) {
+        margin: 2em 1em;
     }
-    .post-body {
-        font-size: $base-font-size * 0.8;
-        line-height: 1.5;
-        margin: 0px 5px;
-
-        h1, .h1 {
-            font-size: $base-font-size * 1.375;
-        }
-        h2, .h2 {
-            font-size: $base-font-size * 1.250;
-            margin-top: 0.5em;
-        }
-        h3, .h3 {
-            font-size: $base-font-size * 1.125;
-            margin-top: 0.4em;
-        }
-        h4, .h4 {
-            font-size: $base-font-size;
-            margin-top: 0.3em;
-        }
-        h5, .h5 {
-            font-size: $base-font-size * 1.0;
-            margin-top: 0.2em;
-        }
-
-        pre,
-        code {
-            font-size: $base-font-size * 0.7;
-        }
-
-        code {
-            padding: 1px 3px;
-        }
-
-        pre {
-            padding: 4px 6px;
-        }
-    }
-        
-
-    time {
-        font-size: $small-font-size * 0.75;
-    }
-
 }

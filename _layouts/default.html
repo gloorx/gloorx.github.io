@@ -4,12 +4,12 @@
 
   <body>
   <div id='container'>
-    {% include header.html %}
-    {% include navigator.html %}
+    <header id="site-header">{% include header.html %}</header>
+    <nav id="site-nav">{% include navigator.html %}</nav>
 
     <main>{{ content }}</main>
 
-    {% include footer.html %}
+    <footer id="site-footer">{% include footer.html %}</footer>
   </div>
   {% include analytics.html %}
   </body>

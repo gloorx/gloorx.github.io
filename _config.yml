@@ -14,16 +14,19 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
     input: GFM
+    hard_wrap: false
 
 permalink: ":year-:title/"
 
-# Collections (unstable)
+# Collections
 collections:
   works:
     output: true
 
-paginate: 2
+# Pagination
+paginate: 1
 paginate_path: ":num/"
+
 
 defaults:
     -

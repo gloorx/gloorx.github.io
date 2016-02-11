@@ -1,25 +1,12 @@
-<nav id="site-nav">
-  <ul>
-    <li>
-      <a href="{{ site.baseurl }}/about/">About</a>
-    </li>
-    <li>
-      <a href="{{ site.baseurl }}/">Newest</a>
-    </li>
-    <li>
-      <a href="{{ site.baseurl }}/archive/">Archive</a>
-    </li>
-    <!--<li>
-      <a href="{{ site.baseurl }}/wiki/">Wiki</a>
-    </li>-->
-    <!-- search form -->
-    <li>
-      <form method="get" action="/search" data-search-form>
-        <input type="text" name="q" id="q" placeholder="Search" data-search-input required/>
-      </form>
-      <!-- <form method="get" action="">
-        <input type="text" name="s" placeholder="Search" required/>
-      </form> -->
-    </li>
-  </ul>
-</nav>
+<ul>
+  <li><a href="{{ site.baseurl }}/about/">About</a></li>
+  <li><a href="{{ site.baseurl }}/">Newest</a></li>
+  <li><a href="{{ site.baseurl }}/archive/">Archive</a></li>
+
+  <!-- search form -->
+  <li>
+    <form method="get" action="/search" data-search-form>
+      <input type="text" name="q" id="q" placeholder="Search" data-search-input required/>
+    </form>
+  </li>
+</ul>

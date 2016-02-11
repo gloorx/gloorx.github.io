@@ -1,0 +1,26 @@
+#site-header {
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5em 0em;
+
+    #title {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 1.0;
+        margin-bottom: 10px;
+        a {
+            color: $base-text-color;
+            text-decoration: none;
+        }
+    }
+    #description {
+        color: $gray-color;
+        font-style: italic;
+    }
+
+    @media (min-width: $large-breakpoint) {
+        #title {
+            font-size: 50px;
+        }
+    }
+}
