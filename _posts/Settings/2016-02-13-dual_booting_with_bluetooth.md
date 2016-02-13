@@ -20,7 +20,7 @@ Type=4
 PINLength=0
 ```
 4. 블루투스 기기는 일단 끄고, Windows로 부팅해서 [psexec](https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx)를 다운받고 관리자 권한으로 터미널을 열어 `psexec -s -i regedit.exe`를 입력해 레지스트리 편집기를 연다.
-5. `HKEY_LOCAL_MACHINE/SYSTEM/ControlSet001/Services/BTHPORT\Parameters\Keys`로 내려가면 블루투스 기기의 ID를 찾을 수 있다. 해당 키를 마우스오른쪽 메뉴에서 `Modify Binary Data`로 열어준다.
+5. `HKEY_LOCAL_MACHINE/SYSTEM/ControlSet001/Services/BTHPORT/Parameters/Keys`로 내려가면 블루투스 기기의 ID를 찾을 수 있다. 해당 키를 마우스오른쪽 메뉴에서 `Modify Binary Data`로 열어준다.
 6. 둘씩 짝지어진 16개의 hex 값을 볼 수 있다. 이 값을 지우고 3에서 기억해뒀던 32자리 key값을 옮겨적는다.
 7. 레지스트리 편집기를 닫고, 블루투스 기기를 켜보자.
 8. 연결됨!
