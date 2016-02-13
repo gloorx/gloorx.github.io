@@ -11,7 +11,8 @@ category: Settings
 
 1. 먼저 양쪽 OS에서 블루투스를 한 번씩 페어링한다.
 2. Ubuntu에서 `sudo -i`로 root 계정으로 전환한 후 `/var/lib/bluetooth/AA:AA:AA:AA:AA:AA/BB:BB:BB:BB:BB:BB`로 이동한다. AA는 랩탑의 블루투스 MAC 주소이고 BB는 페어링된 기기의 맥주소다.
-3. `info`파일을 열어서 `[LinkKey]`의 32자리의 key값을 기억해둔다.
+3. `info`파일을 열어서 `[LinkKey]`의 32자리의 key값을 기억해둔다.  
+
 ```
 [LinkKey]
 Key=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
