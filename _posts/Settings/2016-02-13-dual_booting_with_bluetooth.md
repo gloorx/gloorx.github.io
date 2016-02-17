@@ -7,7 +7,7 @@ category: Settings
 
 개발할 때는 Ubuntu가 Windows보다 편하기에 랩탑에 Ubuntu 15.10과 Windows 10을 멀티부팅하여 사용하고 있는데, 매번 OS를 스위칭할 때마다 연결된 장치를 제거하고 페어링을 다시 해주어야 하는 문제가 있었다. k810의 경우 세가지 기기와 동시에 페어링할 수 있기에 Ubuntu에는 1번, Windows는 2번을 연결해서 사용하려고 하였지만, 똑같은 MAC주소가 페어링되면 앞에 것은 자동으로 페어링이 해제가 되는 듯했다. 
 
-구글링해서 http://superuser.com/questions/422435/how-to-use-bluetooth-devices-under-two-different-operation-systems를 참조하여 문제를 해결할 수 있었다. 
+구글링해서 [http://superuser.com/questions/422435/how-to-use-bluetooth-devices-under-two-different-operation-systems](http://superuser.com/questions/422435/how-to-use-bluetooth-devices-under-two-different-operation-systems)를 참조하여 문제를 해결할 수 있었다. 
 
 1. 먼저 양쪽 OS에서 블루투스를 한 번씩 페어링한다.
 2. Ubuntu에서 `sudo -i`로 root 계정으로 전환한 후 `/var/lib/bluetooth/AA:AA:AA:AA:AA:AA/BB:BB:BB:BB:BB:BB`로 이동한다. AA는 랩탑의 블루투스 MAC 주소이고 BB는 페어링된 기기의 맥주소다.
