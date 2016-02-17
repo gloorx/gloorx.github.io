@@ -1,7 +1,7 @@
 ---
 title: The Museum of Babel
 date: 2016-02-17
-status: drafts
+status: draft
 excerpt: A website making you easily to search works in the museum of babel
 image:
     icon: museumofbabel-icon.png
