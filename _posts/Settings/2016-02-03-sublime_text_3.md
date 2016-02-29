@@ -3,12 +3,12 @@ title: Sublime Text 3
 published: true
 category: Setting
 ---
-### Install Sublime Text 3
+## Install Sublime Text 3
 
-### Install Package Control
+## Install Package Control
 https://packagecontrol.io/installation
 
-### Plugin
+## Plugin
 
 #### SideBarEnhancements
 
@@ -130,7 +130,7 @@ Add below codes in `Preference -> Package Settings -> Bracket Highlighter -> Bra
 }
 ```
 
-### Preference
+## Preference
 Add below codes in `Preference -> Setting - User`
 
 ```json
