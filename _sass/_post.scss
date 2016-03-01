@@ -51,9 +51,10 @@ main {
     }
 
     pre {
-        margin-top: 0;
-        margin-bottom: 1rem;
+        margin: 0 1rem 1rem 1rem;
+        padding: 0.5rem;
         overflow-x: auto;
+        font-size: 70%
     }
 
     pre code {
