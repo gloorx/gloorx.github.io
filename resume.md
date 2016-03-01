@@ -2,7 +2,7 @@
 title: Sang Won Kim
 permalink: /resume/
 ---
-_pueuepueue@gmail.com_
+_pueuepueue**[at]**gmail.com_
 
 <br />
 
@@ -22,11 +22,11 @@ _pueuepueue@gmail.com_
 
 #### SKILLS AND ABILITIES
 
-- **Programming Language**: C++, Python, Objective-C, HTML5, CSS3, JavaScript
+- **Programming Language**: Python, C++, Objective-C, HTML5, CSS3
 - **Platform &amp; Framework**: Django, Celery, iOS, Cocos2d, Pygame
 - **Database**: MySQL, SQLite
 - **Cloud Service**: Amazon Web Service (EC2, RDS)
-- **Tools**: GIT, Sublime Text, Photoshop, Ubuntu, Google Analytics
+- **Tools**: GIT, Sublime Text, Photoshop, Ubuntu
 
 <br />
 
