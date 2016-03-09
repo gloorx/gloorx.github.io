@@ -3,11 +3,13 @@ title: 2bytes 정수 배열에 12bits 정수 저장하기
 published: true
 category: Dev
 ---
-커피를 한 잔 밖에 마시지 않은 어느 비오는 날의 삽질. 메모리 제한이 2MB인 수업 과제에서 필요한 정수 배열의 크기를 10,000,000이 아닌 1,000,000으로 잘못 봤다. unsigned short는 2bytes, 백만 개면 딱 2MB다. 과제에서 요구하는 배열에 저장되는 정수는 어떤 경우에도 1500을 넘지 않으니 bit는 12개만 있으면 충분하다.
+커피를 한 잔 밖에 마시지 않은 어느 비오는 날의 삽질. 메모리 제한이 2MB인 수업 과제에서 필요한 정수 배열의 크기를 10,000,000이 아닌 1,000,000으로 잘못 봐서 시작된 삽질이다. unsigned short는 2bytes, 백만 개면 딱 2MB다. 메모리 제한을 넘지 않게 하려면 배열 크기를 줄일 필요가 있었는데, 과제에서 요구하는 배열에 저장되는 정수는 어떤 경우에도 1500을 넘지 않으니 bit는 12개만 있으면 충분했다.
 
-unsigned short 3개마다 12bits 정수가 12개 들어갈 수 있으니 index 번호 변환은 간편하게 _/4*3_ 해주면 된다.
+unsigned short 3개마다 12bits 4개가 들어갈 수 있으니 index 번호 변환은 간편하게 _/4*3_ 해주면 된다.
 
 ```c
+unsigned short arr[10000000/4*3];
+
 void store(int index, unsigned short value) {
     int chunk_num = (index/4)*3;
     switch (index%4) {
