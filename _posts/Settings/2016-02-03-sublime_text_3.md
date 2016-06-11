@@ -1,7 +1,7 @@
 ---
 title: Sublime Text 3
 published: true
-category: Setting
+category: Settings
 ---
 ## Install Sublime Text 3
 
