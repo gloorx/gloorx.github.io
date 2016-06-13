@@ -11,10 +11,11 @@ _pueuepueue**[at]**gmail.com_
 **Inha University, Incheon, Korea** <time style="float: right">Expected Graduation at: February 2017</time>
 
 - **Bachelor of Science in Engineering, Major in Computer Science and Information Engineering**
-  + Object-Oriented Programming, Computer Networks, Assembly Language
-  + Theory of Programming Language
+  + Object-Oriented Programming, Assembly Language
   + Logic Circuits, Computer Architecture
-  + Data Structure, Database
+  + Data Structure, Algorithm, Problem Solving
+  + Theory of Programming Language
+  + Computer Networks, Database
 
 - **Bachelor of International Trade, Major in International Trade**
 
@@ -22,11 +23,11 @@ _pueuepueue**[at]**gmail.com_
 
 #### SKILLS AND ABILITIES
 
-- **Programming Language**: Python, C++, Objective-C, HTML5, CSS3
-- **Platform &amp; Framework**: Django, Celery, iOS, Cocos2d, Pygame
+- **Programming Language**: Python, C++, Objective-C, HTML5, CSS3, Javascript
+- **Platform &amp; Framework**: Django, iOS, Cocos2d, Pygame
 - **Database**: MySQL, SQLite
 - **Cloud Service**: Amazon Web Service (EC2, RDS)
-- **Tools**: GIT, Sublime Text, Photoshop, Ubuntu
+- **Tools**: GIT, Atom, Photoshop, Ubuntu
 
 <br />
 
