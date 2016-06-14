@@ -206,7 +206,7 @@ public:
                             root = c;
                     }
                     else { // \형태
-                           //Node<E> *t1 = a->left;
+                        //Node<E> *t1 = a->left;
                         Node<E> *t2 = b->left;
                         //Node<E> *t3 = c->left;
                         //Node<E> *t4 = c->right;
