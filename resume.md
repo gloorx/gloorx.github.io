@@ -1,6 +1,7 @@
 ---
 title: Sang Won Kim
 permalink: /resume/
+sitemap: false
 ---
 _pueuepueue**[at]**gmail.com_
 
