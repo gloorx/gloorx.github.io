@@ -1,7 +1,6 @@
 ---
 title: Wordpress에서 Jekyll로
-published: false
-category: Scribbles
+tag: jekyll
 ---
 
 Raspberry pi + Wordpress 조합에서 [Github-pages](https://pages.github.com) + [Jekyll](http://jekyllrb.com) 조합으로 블로그를 새로 만들었다. 옮기게 된 이유는

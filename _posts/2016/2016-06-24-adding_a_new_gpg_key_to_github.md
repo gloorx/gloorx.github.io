@@ -1,6 +1,6 @@
 ---
 title: GitHub에 GPG 키 추가하기
-category: Dev
+tag: github
 ---
 1. 터미널을 열고 키를 생성한다.
 ```

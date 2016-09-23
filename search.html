@@ -1,28 +1,21 @@
 ---
 title: Search
 permalink: /search/
+sitemap: false
 ---
 <div markdown="0">
-  <!-- Search results placeholder -->
-  <p data-search-found>
-    <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
-  </p>
-  <div data-search-results></div>
-
-
-  <!-- Search result template -->
-  <script type="text/x-template" id="search-result">
-    <div>
-      <span class="h3"><a href="##Url##">##Title##</a></span>
-      <time>##Date##</time><br />
-      ##Snippet##
-    </div>
-    <br />
-  </script>
-
-  <!-- jQuery - required but can be moved to the <head> -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <!-- Search script - Must appear after template -->
-  <script src="/search.js"></script>
+    <div id="home-search" class="home">
+     <script>
+      (function() {
+        var cx = '013016873365254833461:dvf0rydr3t4';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+<gcse:searchresults-only queryParameterName="searchString"></gcse:searchresults-only>
+ </div>
 </div>

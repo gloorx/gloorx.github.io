@@ -1,7 +1,6 @@
 ---
 title: Django에서 User 모델 커스터마이징하기
-published: true
-category: Dev
+tag: django
 ---
 이메일로 로그인하는 앱을 만들고자 프로젝트 만들고 날리고를 몇 차례, 구글링과 django 문서를 통해 목적을 달성할 수 있었다. 문서에 나온 full example을 따라해보면 항상 migrate에 실패했는데, 검색하며 찾아낸 몇 가지 샘플코드들을 적용하여보니 작동하는 코드들이 있었다. 이 코드들을 보고나서 다시 문서를 보니까 '아 이게 그 소리였구나'가 감탄사로 나온다. 하지만 아직도 왜 full example 코드는 에러가 뜨는지 모르겠다.
 
@@ -36,7 +35,7 @@ is_staff = models.BooleanField(default=False)
 USERNAME_FIELD = 'email'
 ```
 
-제공되는 메소드도 입맛에 맞게 고치면 된다. 
+제공되는 메소드도 입맛에 맞게 고치면 된다.
 
 ```python
 def get_full_name(self):

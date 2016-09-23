@@ -1,5 +1,5 @@
 # Site settings
-title: pueue
+title: Pueue
 email: pueuepueue@gmail.com
 description: Nobody cares how it works as long as it works
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -7,14 +7,14 @@ url: http://pueue.com # the base hostname & protocol for your site
 twitter_username: pueuepueue
 github_username:  pueue
 
-
 # Build settings
-gems: [jekyll-paginate]
-
-markdown: kramdown
+github: [metadata]
 kramdown:
-    input: GFM
-    hard_wrap: false
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
 
 permalink: ":year-:title/"
 
@@ -29,23 +29,24 @@ paginate_path: ":num/"
 
 
 defaults:
-    -
-        scope:
-            path: "" # 여기에서 빈 문자열은 프로젝트 내의 모든 파일을 의미합니다
-            type: "posts"
-        values:
-            layout: "post"
-            published: true
-    -
-        scope:
-            path: ""
-            type: "pages"
-        values:
-            layout: "page"
-            search_omit: true
-    -
-        scope:
-            path: ""
-            type: works
-        values:
-            layout: work
+  -
+    scope:
+      path: "" # 여기에서 빈 문자열은 프로젝트 내의 모든 파일을 의미합니다
+      type: "posts"
+    values:
+      layout: "post"
+      published: true
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      search_omit: true
+  -
+    scope:
+      path: ""
+      type: works
+    values:
+      layout: work

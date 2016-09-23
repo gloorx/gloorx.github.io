@@ -25,8 +25,8 @@ _pueuepueue**[at]**gmail.com_
 #### SKILLS AND ABILITIES
 
 - **Programming Language**: Python, C++, Objective-C, HTML5, CSS3, Javascript
-- **Platform &amp; Framework**: Django, iOS, Cocos2d, Pygame
-- **Database**: MySQL, SQLite
+- **Platform &amp; Framework**: Django, iOS, Cocos2d, Pygame, Node.js, Express
+- **Database**: MySQL, MariaDB, SQLite, MongoDB
 - **Cloud Service**: Amazon Web Service (EC2, RDS)
 - **Tools**: GIT, Atom, Photoshop, Ubuntu
 

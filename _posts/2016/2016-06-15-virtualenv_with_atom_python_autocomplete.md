@@ -1,7 +1,6 @@
 ---
 title: Virtualenvwrapper와 Atom의 python-autocomplete 연결하기
-published: true
-category: Dev
+tag: python
 ---
 Atom의 python-autocomplete는 파이썬 구문의 자동완성을 도와주는 패키지다. 사용하는 파이썬의 경로를 설정해주면 site-package의 모듈까지 자동완성을 해준다.
 
@@ -15,6 +14,8 @@ Atom의 python-autocomplete는 파이썬 구문의 자동완성을 도와주는 
 
 python-autocomplete 설정에서 Python executable path에 아래 경로를 넣어준다.
 
-	/home/<USERNAME>/.virtualenvs/$PROJECT_NAME/bin/python3
+```
+/home/<USERNAME>/.virtualenvs/$PROJECT_NAME/bin/python3
+```
 
 단 virtualenv의 이름과 프로젝트 폴더의 이름이 같아야한다.

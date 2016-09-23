@@ -1,7 +1,6 @@
 ---
-title: Sublime Text 3
-published: true
-category: Settings
+title: Sublime Text 3 플러그인
+tag: sublime text
 ---
 ## Install Sublime Text 3
 
@@ -18,8 +17,8 @@ Add below codes in `~/.codeintel/config` or `<PROJECT_ROOT>/.codeintel/config`
 ```json
 {
     "Python": {
-        "python": '~/virtualenvs/<VENV_ROOT>/bin/python',
-        "pythonExtraPaths": ['~/virtualenvs/<VENV_ROOT>/lib/python3.5/site-packages',
+        "python": "~/virtualenvs/<VENV_ROOT>/bin/python",
+        "pythonExtraPaths": ["~/virtualenvs/<VENV_ROOT>/lib/python3.5/site-packages",
         ]
     },
 }
