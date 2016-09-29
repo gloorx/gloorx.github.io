@@ -16,8 +16,6 @@ gems:
   - jekyll-coffeescript
   - jekyll-paginate
 
-permalink: ":year-:title/"
-
 # Collections
 collections:
   works:
@@ -35,6 +33,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: ":year-:title/"
       published: true
       comments: true
   -
