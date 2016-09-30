@@ -28,10 +28,10 @@ main {
 
     @media (min-width: $large-breakpoint) {
         font-size: 40px;
-        
+
         margin: 1.5em 0px 1.0em 0px;
     }
-    
+
 }
 /*--- POST BODY ---*/
 .post {
@@ -44,7 +44,7 @@ main {
 
     code {
         padding: .25em .5em;
-        font-size: 85%;
+        font-size: 90%;
         color: $code-text-color;
         background-color: $code-background-color;
         border-radius: 3px;
@@ -54,7 +54,7 @@ main {
         margin: 0 1rem 1rem 1rem;
         padding: 0.5rem;
         overflow-x: auto;
-        font-size: 70%
+        font-size: 90%;
     }
 
     pre code {
@@ -68,7 +68,7 @@ main {
 }
 
 
-/*--- POST DATE ---*/ 
+/*--- POST DATE ---*/
 .post-date {
     margin: 1em 0.5em;
     text-align: right;

@@ -3,6 +3,14 @@
     text-align: center;
     padding: 0.5em 0em;
 
+    #icon {
+      max-width: 100px;
+      vertical-align: middle;
+
+      @media (min-width: $large-breakpoint) {
+        max-width: 200px;
+      }
+    }
     #title {
         font-weight: bold;
         font-size: 40px;
