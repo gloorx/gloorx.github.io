@@ -4,18 +4,16 @@ permalink: /archive/
 sitemap: false
 ---
 <div markdown="0">
-{% for tag in site.tags %}
+{% for tag in site.tags reversed %}
     {% assign tag_name = tag | first %}
     {% assign posts = tag | last %}
     <h1>{{ tag_name }}</h1>
     <ul>
     {% for post in posts %}
-        {% if post.tags contains tag_name %}
         <div>
             <a href="{{ post.url }}">{{ post.title }}</a>
             <time>{{ post.date | date: "%b %-d, %Y"  }}</time>
         </div>
-        {% endif %}
     {% endfor %}
     </ul>
 {% endfor %}
