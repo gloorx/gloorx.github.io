@@ -39,11 +39,11 @@ National Service Conscript
 
 ### SKILLS AND ABILITIES
 
-- **Programming Language**: Python, C++, Objective-C, HTML5, CSS3, Javascript, ruby
+- **Programming Language**: Python, C++, Objective-C, HTML5, CSS3, Javascript, Ruby
 - **Platform &amp; Framework**: Django, iOS, Cocos2d, Pygame, Node.js, Express, Rails
 - **Database**: MySQL, MariaDB, SQLite, MongoDB
 - **Cloud Service**: Amazon Web Service (EC2, RDS)
-- **Tools**: GIT, Atom, Photoshop, Ubuntu
+- **Tools**: Git, Vim, Ubuntu, Photoshop
 
 <br />
 
