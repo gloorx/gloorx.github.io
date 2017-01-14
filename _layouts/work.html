@@ -2,22 +2,22 @@
 layout: default
 ---
 <article itemscope itemtype="https://schema.org/CreativeWork">
-	<h1 class="post-title">
-		<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-	</h1>
+  <h1 class="post-title">
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </h1>
 
-	<time class="work-date" datetime="{{ page.date | date_to_xmlschema }}">
-		{% if page.status == "released" %}released {% else %}draft {% endif %}
-		at {{ page.date | date: "%b %Y" }}
-	</time>
-	<br /><br />
+  <time class="work-date" datetime="{{ page.date | date_to_xmlschema }}">
+    {% if page.status == "released" %}released {% else %}draft {% endif %}
+    at {{ page.date | date: "%b %Y" }}
+  </time>
+  <br /><br />
 
-	<div class="post-screenshot">
-	{% for screenshot in page.image.screenshots %}
-		<img style="width: 100%; max-width: 200px; vertical-align: middle" src="{{ site.url }}/works_img/{{ screenshot }}" />
-	{% endfor %}
-	</div>
+  <div class="post-screenshot">
+  {% for screenshot in page.image.screenshots %}
+    <img style="width: 100%; max-width: 200px; vertical-align: middle" src="{{ site.url }}/works_img/{{ screenshot }}" />
+  {% endfor %}
+  </div>
 
-	{{ content }}
+  {{ content }}
 
 </article>
