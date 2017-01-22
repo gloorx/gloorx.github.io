@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang=”ko”>
-  {% include head.html %}
-
+<html lang="ko">
+  <head>
+    {% include head.html %}
+  </head>
   <body>
-  <div id='container'>
-    <header id="site-header">{% include header.html %}</header>
-    <nav id="site-nav">{% include navigator.html %}</nav>
+    <div id="container">
+      <header id="site-header">{% include header.html %}</header>
+      <nav id="site-nav">{% include navigator.html %}</nav>
 
-    <main>{{ content }}</main>
+      <main>{{ content }}</main>
 
-    <footer id="site-footer">{% include footer.html %}</footer>
-  </div>
-  {% include analytics.html %}
+      <footer id="site-footer">{% include footer.html %}</footer>
+    </div>
+    {% include analytics.html %}
+    <a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-orange-right.png"> </a>
   </body>
 
 </html>
