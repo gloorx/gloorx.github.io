@@ -51,8 +51,7 @@ main {
     }
 
     pre {
-        margin: 0 1rem 1rem 1rem;
-        padding: 0.5rem;
+        padding: 0rem 0.5rem;
         overflow-x: auto;
         font-size: 90%;
     }
@@ -60,7 +59,8 @@ main {
     pre code {
         padding: 0;
         border: 0;
-        font-size: 100%;
+        font-size: 70%;
+        line-height: 1;
         color: inherit;
         background-color: transparent;
     }
