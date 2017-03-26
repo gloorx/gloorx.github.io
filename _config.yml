@@ -22,7 +22,7 @@ collections:
     output: true
 
 # Pagination
-paginate: 1
+paginate: 3
 paginate_path: ":num/"
 
 
