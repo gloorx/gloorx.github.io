@@ -42,9 +42,9 @@ cursor 기반 페이지네이션은 페이지 이동시 데이터의 흐름이 �
 ```sql
 /*
 current page is showing [
-  { id: 8, created_at: 2017-01-01T00:00:00 },
-  { id: 7, created_at: 2017-01-01T00:00:00 },
-  { id: 6, created_at: 2017-01-01T00:00:00 },
+  { id: 8, created_at: '2017-01-01 00:00:00' },
+  { id: 7, created_at: '2017-01-01 00:00:00' },
+  { id: 6, created_at: '2017-01-01 00:00:00' },
 ]
 */
 
@@ -52,12 +52,12 @@ SELECT * FROM Posts ORDER BY created_at DESC, id DESC LIMIT 3; -- first page
 
 SELECT * FROM (
   SELECT * FROM Posts
-  WHERE created_at > 2017-01-01T00:00:00 OR (created_at = 2017-01-01T00:00:00 AND id > 8)
+  WHERE created_at > '2017-01-01 00:00:00' OR (created_at = '2017-01-01 00:00:00' AND id > 8)
   ORDER BY created_at ASC, id ASC LIMIT 3
 ) t ORDER BY created_at DESC, id DESC; -- previous page
 
 SELECT * FROM Posts
-WHERE created_at < 2017-01-01T00:00:00 OR (created_at = 2017-01-01T00:00:00 AND id < 6)
+WHERE created_at < '2017-01-01 00:00:00' OR (created_at = '2017-01-01 00:00:00' AND id < 6)
 ORDER BY created_at DESC, id DESC LIMIT 3; -- next page
 ```
 
