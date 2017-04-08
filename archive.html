@@ -4,36 +4,17 @@ permalink: /archive/
 sitemap: false
 ---
 <div markdown="0">
-<!--
-{% for tag in site.tags reversed %}
-    {% assign tag_name = tag | first %}
-    {% assign posts = tag | last %}
-    <h1>{{ tag_name }}</h1>
-    <ul>
-    {% for post in posts %}
-        <div>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <time>{{ post.date | date: "%b %-d, %Y"  }}</time>
-        </div>
-    {% endfor %}
-    </ul>
-{% endfor %}
--->
 
 {% for post in site.posts %}
   {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
   {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
     {% if month != nmonth %}
-      {% if forloop.index != 1 %}
-</ul>
-      {% endif %}
-<h2>{{ post.date | date: '%Y-%m' }}</h2>
-<ul>
+      </p>
+      <p>
+      <strong>{{ post.date | date: '%Y-%m' }}</strong><br />
     {% endif %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <small><time>{{ post.date | date: "%b %-d, %Y"  }}</time></small>
-  </li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small><time>{{ post.date | date: "%b %-d, %Y"  }}</time></small><br />
 {% endfor %}
 
 </div>
