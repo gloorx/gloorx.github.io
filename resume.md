@@ -9,7 +9,7 @@ _pueuepueue[at]gmail.com_
 
 ### EDUCATION
 
-<time style="float: right">Expected Graduation at: February 2017</time>
+<time style="float: right">February 2017</time>
 **Inha University, Incheon, Korea**  
 Bachelor of Science in Engineering, *Major in Computer Science and Information Engineering*
 
