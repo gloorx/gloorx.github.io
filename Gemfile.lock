@@ -195,7 +195,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 134)
-  json
 
 BUNDLED WITH
    1.14.6
