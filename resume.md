@@ -11,7 +11,7 @@ _pueuepueue[at]gmail.com_
 
 <time style="float: right">February 2017</time>
 **Inha University, Incheon, Korea**  
-Bachelor of Science in Engineering, *Major in Computer Science and Information Engineering*
+Bachelor of Science, *in Computer Science and Information Engineering*
 
   - Object-Oriented Programming, Assembly Language
   - Logic Circuits, Computer Architecture
@@ -19,7 +19,7 @@ Bachelor of Science in Engineering, *Major in Computer Science and Information E
   - Theory of Programming Language
   - Operating System, Computer Networks, Database
 
-Bachelor of International Trade, *Major in International Trade*
+Bachelor of International Trade, *in International Trade*
 
 <br />
 
