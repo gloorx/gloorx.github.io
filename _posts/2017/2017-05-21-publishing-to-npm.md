@@ -43,17 +43,17 @@ npm에 배포하기 위해선 배포할 모듈의 루트 디렉토리에 'packag
 }
 ```
 
-- name
-- version: 매 배포마다 이 부분을 수정해서 버전을 높혀야 배포할 수 있다. 이미 배포된 것과 버전이 같다면 코드가 달라도 배포되지 않는다.
-- description
-- main: 패키지가 import되면 실행될 파일.
-- scripts: 특정 스크립트는 npm 배포시 훅으로 동작한다. `prepublish`는 `npm publish`를 하면 배포되기 전에 실행된다. 이런 스크립트 목록은 https://docs.npmjs.com/misc/scripts 에서 확인할 수 있다.
-- repository: 코드의 저장소 주소
-- keywords: npm에서 목록에 있는 단어로 검색하면 패키지를 검색결과에 노출한다.
-- author
-- license
-- devDependencies: 패키지를 설치할 때는 제외되는 개발용 의존 패키지 목록.
-- dependencies: 패키지를 설치할 때 함께 설치되는 의존 패키지 목록.
+- `name`
+- `version`: 매 배포마다 이 부분을 수정해서 버전을 높혀야 배포할 수 있다. 이미 배포된 것과 버전이 같다면 코드가 달라도 배포되지 않는다.
+- `description`
+- `main`: 패키지가 import되면 실행될 파일.
+- `scripts`: 특정 스크립트는 npm 배포시 훅으로 동작한다. `prepublish`는 `npm publish`를 하면 배포되기 전에 실행된다. 이런 스크립트 목록은 https://docs.npmjs.com/misc/scripts 에서 확인할 수 있다.
+- `repository`: 코드의 저장소 주소
+- `keywords`: npm에서 목록에 있는 단어로 검색하면 패키지를 검색결과에 노출한다.
+- `author`
+- `license`
+- `devDependencies`: 패키지를 설치할 때는 제외되는 개발용 의존 패키지 목록.
+- `dependencies`: 패키지를 설치할 때 함께 설치되는 의존 패키지 목록.
 
 ### .npmignore
 
@@ -92,7 +92,7 @@ npm-debug.log
     └── index.js
 ```
 
-먼저 'package.json'에서 `"main": "lib/index.js"`로 패키지의 entry point를 컴파일된 파일로 설정한다. 그 다음 `"scripts"`에 `"prepublish": "babel src --out-dir lib"`를 추가해서 배포전에 Babel이 컴파일할 수 있도록 한다.
+먼저 'package.json'에서 `"main": "lib/index.js"`로 패키지의 entry point를 컴파일된 파일로 설정한다. 그 다음 `"scripts"`에 `"prepublish": "babel src --out-dir lib"`를 추가해서 배포전에 Babel이 컴파일할 수 있도록 한다.  
 컴파일된 파일은 버전관리할 필요가 없으므로 '.gitignore'에 `lib`를 추가한다.  
 반대로 소스코드는 배포할 필요가 없으므로 '.npmignore'에 `src`를 추가한다.
 
