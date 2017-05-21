@@ -67,7 +67,7 @@ npm install babel-plugin-add-module-exports --save-dev
 
 ```javascript
 // A.js
-export export class A {}
+export default class A {}
 // -------
 var A = require('AAA');
 var a = new A();
