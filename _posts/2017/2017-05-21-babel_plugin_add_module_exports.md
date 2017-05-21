@@ -17,7 +17,7 @@ var a = new A();
 
 ```javascript
 console.log(A);
-// { default:[ Function: A ] }
+// { default: [ Function: A ] }
 ```
 
 원인은 Babel에 있었는데, Babel@6부터 commonJS의 `module.exports`를 더 이상 기본으로 export하지 않고 'default'라는 키로 export한다.
@@ -53,7 +53,7 @@ const a = new A();
 npm install babel-plugin-add-module-exports --save-dev
 ```
 
-```javascript
+```json
 // .babelrc
 {
   "presets": ["env"],
@@ -67,7 +67,7 @@ npm install babel-plugin-add-module-exports --save-dev
 
 ```javascript
 // A.js
-export class A {}
+export export class A {}
 // -------
 var A = require('AAA');
 var a = new A();
