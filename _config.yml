@@ -1,11 +1,11 @@
 # Site settings
-title: Pueue
-email: pueuepueue@gmail.com
+title: Gloorx
+email: glrx.vloq@gmail.com
 description: Nobody cares how it works as long as it works
 baseurl:  # the subpath of your site, e.g. /blog/
-url: http://pueue.com # the base hostname & protocol for your site
-twitter_username: pueuepueue
-github_username:  pueue
+url: http://gloorx.com # the base hostname & protocol for your site
+twitter_username: gloorxvloq
+github_username:  gloorx
 
 # Build settings
 github: [metadata]

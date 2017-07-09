@@ -3,7 +3,7 @@ title: Sang Won Kim
 permalink: /resume/
 sitemap: false
 ---
-_pueuepueue[at]gmail.com_
+_glrx.vloq[at]gmail.com_
 
 <br />
 

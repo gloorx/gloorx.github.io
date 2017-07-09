@@ -1,6 +1,6 @@
 ---
 title: Github 첫 star
-tag: github
+tag: scribble
 ---
 Github에서 처음으로 스타를 받았다. 작은 오픈소스에 내 PR이 merge된 적도 있고, 몇 개의 저장소에 issue를 올려본 적은 있었지만, 내 저장소에서 다른 개발자와의 상호작용이 일어난 건 처음이다.
 
@@ -10,4 +10,4 @@ Next.js 저장소에서 Typescript loader를 사용할 수 있게 하는 PR에�
 
 아마 Next.js가 ts-loader를 지원하게 되면 필요없어질 짧은 수명의 저장소겠지만, 뭔가 나도 오픈소스 생태계에 한 발짝 들어선 느낌이다.
 
-아! 이 글의 주인공은 [https://github.com/pueue/nextjs-typescript-boilerplate](https://github.com/pueue/nextjs-typescript-boilerplate)다.
+아! 이 글의 주인공은 [https://github.com/gloorx/nextjs-typescript-boilerplate](https://github.com/gloorx/nextjs-typescript-boilerplate)다.
