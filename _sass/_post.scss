@@ -43,7 +43,7 @@ main {
     }
 
     code {
-        padding: .25em .5em;
+        padding: .1em .25em;
         font-size: 90%;
         color: $code-text-color;
         background-color: $code-background-color;
@@ -59,7 +59,7 @@ main {
     pre code {
         padding: 0;
         border: 0;
-        font-size: 70%;
+        font-size: 80%;
         line-height: 1;
         color: inherit;
         background-color: transparent;
