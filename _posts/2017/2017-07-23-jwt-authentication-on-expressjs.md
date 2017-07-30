@@ -68,7 +68,7 @@ app.post('/login', (req, res) => {
 });
 ```
 
-passport에 jwt strategy 사용한다. payload에 담긴 id가 데이터베이스에 있는 id와 일치하면 토큰이 인증된다. [토큰을 추출하는 방법](https://github.com/themikenicholson/passport-jwt#extracting-the-jwt-from-the-request)에는 여러가지가 있으나, 예제에서는 request header에 'Authorization'키에서 토큰을 추출한다.
+passport에 jwt strategy를 사용한다. payload에 담긴 id가 데이터베이스에 있는 id와 일치하면 토큰이 인증된다. [토큰을 추출하는 방법](https://github.com/themikenicholson/passport-jwt#extracting-the-jwt-from-the-request)에는 여러가지가 있으나, 예제에서는 request header에 'Authorization'키에서 토큰을 추출한다.
 
 ```js
 const passport = require('passport');
