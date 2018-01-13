@@ -70,6 +70,14 @@ main {
             border: 0px 
         }
     }
+
+    blockquote {
+        border-left: 5px solid lightgray;
+        p {
+            margin-left: 10px;
+            color: lightgray;
+        }
+    }
 }
 
 
