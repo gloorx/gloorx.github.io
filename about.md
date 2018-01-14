@@ -10,7 +10,7 @@ sitemap: false
 
 <br />
 블로그에 틀린 내용이 있을 수 있습니다.  
-_glrx.vloq[at]gmail.com_ 으로 메일 보내주시면 저에게 도움이 됩니다.
+_v@vichyssoise.io_ 으로 메일 보내주시면 저에게 도움이 됩니다.
 
 **[résumé]({{ site.baseurl }}/resume/)**  
 **[personal projects]({{ site.baseurl }}/works/)**
