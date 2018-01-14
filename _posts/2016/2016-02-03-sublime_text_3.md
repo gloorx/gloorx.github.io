@@ -61,19 +61,19 @@ Add below codes in `Preference -> Package Settings -> SublimeLinter -> Setting -
         "passive_warnings": false,
         "paths": {
             "linux": [
-                "/home/gloorx/virtualenvs/<VENV_ROOT>/bin"
+                "/home/vichyssoise/virtualenvs/<VENV_ROOT>/bin"
             ],
             "osx": [
-                "/Users/gloorx/virtualenvs/<VENV_ROOT>/bin"
+                "/Users/vichyssoise/virtualenvs/<VENV_ROOT>/bin"
             ],
             "windows": []
         },
         "python_paths": {
             "linux": [
-                "/home/gloorx/virtualenvs/<VENV_ROOT>/bin"
+                "/home/vichyssoise/virtualenvs/<VENV_ROOT>/bin"
             ],
             "osx": [
-                "/Users/gloorx/virtualenvs/<VENV_ROOT>/bin"
+                "/Users/vichyssoise/virtualenvs/<VENV_ROOT>/bin"
             ],
             "windows": []
         },

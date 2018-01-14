@@ -1,11 +1,11 @@
 # Site settings
-title: Gloorx
-email: glrx.vloq@gmail.com
+title: Vichyssoise
+email: v@vichyssoise.io
 description: Nobody cares how it works as long as it works
 baseurl:  # the subpath of your site, e.g. /blog/
-url: http://gloorx.com # the base hostname & protocol for your site
-twitter_username: gloorxvloq
-github_username:  gloorx
+url: http://vichyssoise.io # the base hostname & protocol for your site
+twitter_username: vichyssoise_io
+github_username: vichyssoise
 
 # Build settings
 github: [metadata]
