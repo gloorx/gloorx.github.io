@@ -17,4 +17,4 @@ image:
 - Integrated [Game Center](https://developer.apple.com/game-center/).
 - A player must left just one tile in each level by swiping same-tier tile side to fold.
 - Every level is created automatically in real-time, and all levels are solvable.
-- Expired on [<s>iTunes App Store</s>](https://itunes.apple.com/app/unfolding-color/id824068374)
+- Available on [iTunes App Store](https://itunes.apple.com/app/unfolding-color/id824068374)
