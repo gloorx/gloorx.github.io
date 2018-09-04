@@ -85,7 +85,7 @@ mutation은 데이터를 변경하는 구문이다. 리소스를 생성하는 �
 ```sh
 mutation {
   updateHuman(id: "1000", input: {
-    name: "Vichyssoise"
+    name: "Pueue"
   }) {
     name
     height(unit: FOOT)
@@ -100,7 +100,7 @@ mutation {
 {
   "data": {
     "updateHuman": {
-      "name": "Vichyssoise",
+      "name": "Pueue",
       "height": 5.6430448
     }
   }
@@ -179,7 +179,7 @@ type Team {
 {
   "data": {
     "player": {
-      "name": "Vichyssoise"
+      "name": "Pueue"
     }
   }
 }
@@ -208,7 +208,7 @@ type Team {
 {
   "data": {
     "player": {
-      "name": "Vichyssoise",
+      "name": "Pueue",
       "team": {
         "id": 99
       }
@@ -242,11 +242,11 @@ type Team {
 {
   "data": {
     "player": {
-      "name": "Vichyssoise",
+      "name": "Pueue",
       "team": {
         "players": [
           {
-            "name": "Vichyssoise"
+            "name": "Pueue"
           }
         ]
       }

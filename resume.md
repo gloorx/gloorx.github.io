@@ -3,7 +3,7 @@ title: Sang Won Kim
 permalink: /resume/
 sitemap: false
 ---
-_v@vichyssoise.io_
+_contact@pueue.com_
 
 <br />
 
